@@ -1,0 +1,236 @@
+@font-face {
+	font-family: regularFont;
+	src: url(../font/Ubuntu-Regular.ttf);
+	/* font-family: libreFont;
+	src: url(../font/LibreBaskerville-Regular.ttf); */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: regularFont;
+	line-height: auto;
+}
+
+.main {
+	width: 100%;
+	max-width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+}
+
+.leftside {
+	position: fixed;
+	display: inline-block;
+	width: 320px;
+	background-color: #f2f3f7;
+	height: 1500px;
+	text-align: center;
+	justify-content: center;
+}
+
+.rightside {
+	display: inline-block;
+	width: 100%;
+	max-width: 780px;
+	height: 1500px;
+	margin-left: 320px;
+}
+
+.profile img {
+	position: relative;
+	width: 160px;
+	border-radius: 660px;
+	margin-top: 60px;
+}
+
+.name {
+	font-size: 24px;
+	margin-top: 40px;
+	font-family: libreFont;
+}
+
+.subname {
+	font-size: 12px;
+	color: #777;
+	margin-top: 8px;
+}
+
+.navigation ul li {
+	list-style-type: none;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	font-size: 19px;
+	transition: .3s;
+}
+
+.navigation ul li a {
+	color: #777;
+	text-decoration: none;
+}
+
+.navigation {
+	margin-left: -43px;
+	margin-top: 55px;
+}
+
+.navigation ul li a:hover {
+	color: #02b0e0;
+	border-bottom: 2px solid #02b0e0;
+}
+
+.footer {
+	font-size: 14px;
+	color: #777;
+	margin-top: 50px;
+}
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-image: url('../Images/cover_image.jpg');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner-text {
+	position: absolute;
+	left: 390px;
+}
+
+.banner-big-text {
+	font-family: libreFont;
+	font-size: 60px;
+}
+
+.banner-small-text {
+	font-size: 20px;
+	color: rgb(99, 99, 99);
+}
+
+.banner-button {
+	padding: 10px 20px;
+	margin-top: 10px;
+	font-size: 15px;
+	color: #777;
+	border: 1px solid #777;
+	cursor: pointer;
+	transition: 0.15s ease;
+}
+
+.banner-button:hover {
+	color: black;
+	border-color: black;
+}
+
+.about {
+	max-width: 100%;
+	height: auto;
+	color: black;
+	padding: 40px;
+	margin-top: 50px;
+}
+
+.smallTitle {
+	font-size: 13px;
+	color: #777;
+	padding-bottom: 10px;
+}
+
+.bigTitle {
+	font-size: 23px;
+	padding-bottom: 30px;
+}
+
+.about-content {
+	font-size: 18px;
+	color: #777;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.education {
+	max-width: 100%;
+	height: auto;
+	color: black;
+	padding: 40px;
+	margin-top: 30px;
+}
+
+.education-tile {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+}
+
+.colorBox {
+	height: auto;
+	width: 50px;
+	opacity: 0.8;
+}
+
+.tileContent {
+	width: 100%;
+	background-color: rgba(241, 241, 241, 0.747);
+	position: relative;
+}
+
+.tileText {
+	position: relative;
+	padding: 20px;
+	font-size: 16px;
+}
+
+.educationyear {
+	color: #777;
+	font-size: 14px;
+}
+
+.skills {
+	max-width: 100%;
+	height: auto;
+	color: black;
+	padding: 40px;
+	margin-top: 50px;
+}
+
+.skillTile {
+	max-width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: rgba(241, 241, 241, 0.747);
+	height: auto;
+}
+
+.skillTitle {
+	font-size: 20px;
+	padding: 8px 0 0 7px;
+	color: #777;
+}
+
+.skillArea {
+	max-width: 100%;
+	margin: 0 auto;
+	margin: 10px 10px 15px 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.skillImage {
+	height: 30px;
+	width: auto;
+	padding: 0 10px 0 10px;
+}
