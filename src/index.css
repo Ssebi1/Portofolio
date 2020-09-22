@@ -25,7 +25,8 @@ body {
 	display: inline-block;
 	width: 320px;
 	background-color: #f2f3f7;
-	height: 1500px;
+	height: 100vh;
+	overflow: auto;
 	text-align: center;
 	justify-content: center;
 }
@@ -62,7 +63,6 @@ body {
 	margin: 0 auto;
 	padding-bottom: 15px;
 	font-size: 19px;
-	transition: .3s;
 }
 
 .navigation ul li a {
@@ -76,7 +76,6 @@ body {
 }
 
 .navigation ul li a:hover {
-	color: #02b0e0;
 	border-bottom: 2px solid #02b0e0;
 }
 
@@ -87,19 +86,18 @@ body {
 }
 
 .banner {
+	position: relative;
 	width: 100%;
 	height: 100vh;
 	background-image: url('../Images/cover_image.jpg');
 	background-position: center;
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .banner-text {
-	position: absolute;
-	left: 390px;
+	position: relative;
+	padding-top: 37vh;
+	padding-left: 50px;
 }
 
 .banner-big-text {
@@ -233,4 +231,100 @@ body {
 	height: 30px;
 	width: auto;
 	padding: 0 10px 0 10px;
+}
+
+.projects {
+	max-width: 100%;
+	height: auto;
+	color: black;
+	padding: 40px;
+	margin-top: 50px;
+}
+
+.project-categories {
+	padding-inline-start: 2px;
+}
+
+.projects-bigTitle {
+	padding-bottom: 10px;
+}
+
+.projectLi {
+	color: #777;
+}
+
+.selected {
+	color: #02b0e0;
+}
+
+.project-categories li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 30px;
+	cursor: pointer;
+}
+
+.projectArea {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project-tile {
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.project-image {
+	width: 100%;
+	height: 200px;
+	background-image: url('../Images/banner.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.project-content {
+	background-color: rgba(235, 235, 235, 0.747);
+	height: auto;
+	min-height: 100px;
+	max-width: 100%;
+	padding: 10px;
+}
+
+.project-title {
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.project-description {
+	color: #777;
+}
+
+@media only screen and (max-width: 1060px) {
+	.project-tile {
+		max-width: none;
+	}
+}
+
+.viewMore {
+	padding: 10px 30px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #2d98f0;
+	outline: none;
+	border: none;
+	color: white;
+	border-radius: 3px;
+	transition: 0.15s ease-in-out background;
+	cursor: pointer;
+}
+
+.viewMore:hover {
+	background-color: #3ca4fa;
 }
