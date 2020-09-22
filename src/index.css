@@ -42,7 +42,8 @@ body {
 .profile img {
 	position: relative;
 	width: 160px;
-	border-radius: 660px;
+	height: 160px;
+	border-radius: 100%;
 	margin-top: 60px;
 }
 
@@ -140,7 +141,7 @@ body {
 }
 
 .bigTitle {
-	font-size: 23px;
+	font-size: 26px;
 	padding-bottom: 30px;
 }
 
@@ -290,7 +291,7 @@ body {
 }
 
 .project-content {
-	background-color: rgba(235, 235, 235, 0.747);
+	background-color: #F2F3F7;
 	height: auto;
 	min-height: 100px;
 	max-width: 100%;
@@ -313,7 +314,7 @@ body {
 }
 
 .viewMore {
-	padding: 10px 30px;
+	padding: 10px 50px;
 	margin: 0 auto;
 	margin-top: 20px;
 	background-color: #2d98f0;
@@ -326,5 +327,96 @@ body {
 }
 
 .viewMore:hover {
+	background-color: #3ca4fa;
+}
+
+.contact {
+	max-width: 100%;
+	height: auto;
+	color: black;
+	padding: 40px;
+	margin-top: 50px;
+}
+
+.contactArea {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.column1 {
+	width: 50%;
+}
+
+.contact-tile {
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.contact-square {
+	width: 80px;
+	height: 80px;
+	background-color: #F2F3F7;
+	color: #2d98f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+	border-radius: 3px;
+}
+
+.contact-text {
+	font-size: 16px;
+	margin-top: 30px;
+	margin-left: 20px;
+	color: #2d98f0;
+}
+
+.column2 {
+	width: 50%;
+	position: relative;
+}
+
+.column2 input {
+	max-width: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	background-color: #F2F3F7;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+.column2 textarea {
+	width: 100%;
+	outline: none;
+	border: none;
+	background-color: #F2F3F7;
+	border-radius: 3px;
+	height: 80px;
+	resize: none;
+	overflow: auto;
+	padding: 15px 10px;
+	font-size: 16px;
+}
+
+.column2 button {
+	width: 120px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	background-color: #2d98f0;
+	color: white;
+	border-radius: 3px;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: .15s ease-in-out background;
+}
+
+.column2 button:hover {
 	background-color: #3ca4fa;
 }
