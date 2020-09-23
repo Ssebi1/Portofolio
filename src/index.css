@@ -5,6 +5,10 @@
 	src: url(../font/LibreBaskerville-Regular.ttf); */
 }
 
+html {
+	height: -webkit-fill-available;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -15,28 +19,32 @@ body {
 .main {
 	width: 100%;
 	max-width: 1100px;
-	height: auto;
 	margin: 0 auto;
+	height: auto;
 	display: flex;
 }
 
 .leftside {
 	position: fixed;
+	z-index: 20;
 	display: inline-block;
 	width: 320px;
 	background-color: #f2f3f7;
-	height: 100vh;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 	overflow: auto;
 	text-align: center;
 	justify-content: center;
+	transition: transform .3s ease-in-out;
 }
 
 .rightside {
 	display: inline-block;
 	width: 100%;
 	max-width: 780px;
-	height: 1500px;
+	height: auto;
 	margin-left: 320px;
+	transition: .3s ease-in-out;
 }
 
 .profile img {
@@ -307,7 +315,13 @@ body {
 	color: #777;
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1060px) and (min-width: 781px) {
+	.project-tile {
+		max-width: none;
+	}
+}
+
+@media only screen and (max-width: 736px) {
 	.project-tile {
 		max-width: none;
 	}
@@ -419,4 +433,77 @@ body {
 
 .column2 button:hover {
 	background-color: #3ca4fa;
+}
+
+/* Navbar getting closed */
+
+@media only screen and (max-width: 780px) {
+	.leftside {
+		transform: translateX(-320px);
+	}
+	.rightside {
+		margin-left: 0px;
+		max-width: 900px;
+	}
+}
+
+/* Contact flex direction */
+
+@media only screen and (max-width: 990px) and (min-width: 780px) {
+	.contactArea {
+		flex-wrap: wrap;
+	}
+	.column1, .column2 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.contactArea {
+		flex-wrap: wrap;
+	}
+	.column1, .column2 {
+		width: 100%;
+	}
+}
+
+.hamburgerIcon {
+	position: fixed;
+	top: 10px;
+	left: 330px;
+	z-index: 30;
+	cursor: pointer;
+	display: none;
+	transition: transform .3s ease-in-out;
+}
+
+.line {
+	width: 30px;
+	height: 2px;
+	background-color: black;
+	transition: 0.3s ease-in-out;
+}
+
+.line2 {
+	margin-top: 5px;
+}
+
+.line3 {
+	margin-top: 5px;
+}
+
+/* @media only screen and (min-width: 500px) {
+	.hamburgerIcon:hover .line1 {
+		margin-left: 6px;
+	}
+	.hamburgerIcon:hover .line2 {
+		margin-left: 3px;
+	}
+} */
+
+@media only screen and (max-width: 780px) {
+	.hamburgerIcon {
+		display: initial;
+		transform: translateX(-320px);
+	}
 }
