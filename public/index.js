@@ -99,10 +99,10 @@ function viewMore(category) {
     }
     let id = category === 'web' ? 0 : 1;
     let markup = DomElements.viewMoreButton[id].innerHTML;
-    if (markup === 'VIEW MORE <i class="fa fa-chevron-right" aria-hidden="true"></i>')
+    if (markup === 'VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i>')
         markup = 'VIEW LESS <i class="fa fa-chevron-up" aria-hidden="true"></i>';
     else
-        markup = 'VIEW MORE <i class="fa fa-chevron-right" aria-hidden="true"></i>';
+        markup = 'VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i>';
     DomElements.viewMoreButton[id].innerHTML = markup;
 }
 

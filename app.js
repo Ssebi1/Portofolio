@@ -1,0 +1,57 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const port = process.env.port || 4040;
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+require("dotenv").config();
+
+
+app.use(express.static(path.join(__dirname, '/public')));
+
+app.set('view engine', 'ejs');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+
+app.listen(port);
+
+//Routes
+app.get('/', (req, res) => {
+    res.render('index');
+})
+
+
+
+var transporter = nodemailer.createTransport({
+    host: process.env.host,
+    port: 587,
+    secure: false,
+    requireTLS: true,
+    auth: {
+        user: process.env.User,
+        pass: process.env.Password
+    }
+});
+
+app.post('/message', (req, res) => {
+    const { email, subject, message } = req.body;
+    var mailOptions = {
+        from: email,
+        to: 'sebidancau@yahoo.com',
+        subject: subject,
+        html: `From: ${email} <br>${message}`
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            res.render('messageConfirmation');
+        }
+    });
+
+})
+
+

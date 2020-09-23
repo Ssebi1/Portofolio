@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Dancau Sebi</title>
-	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -236,7 +236,7 @@
 						</div>
 					</div>
 
-					<button class="viewMore">VIEW MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+					<button class="viewMore">VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
 
 
 				</div>
@@ -281,7 +281,7 @@
 
 					</div>
 
-					<button class="viewMore">VIEW MORE <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+					<button class="viewMore">VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
 
 
 				</div>
@@ -312,10 +312,10 @@
 
 					</div>
 					<div class="column2">
-						<form action="" method="POST">
-							<input type="email" placeholder="Email" required>
-							<input type="text" placeholder="Subject" required>
-							<textarea name="emailMessage" required placeholder="Message"></textarea>
+						<form action="/message" method="POST">
+							<input type="email" name="email" placeholder="Email" required>
+							<input type="text" name="subject" placeholder="Subject" required>
+							<textarea name="message" required placeholder="Message"></textarea>
 							<button type="submit">Send Message</button>
 						</form>
 					</div>

@@ -1,0 +1,28 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "personal portofolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ssebi1/Portofolio.git"
+  },
+  "author": "Dancau Sebastian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ssebi1/Portofolio/issues"
+  },
+  "homepage": "https://github.com/Ssebi1/Portofolio#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4",
+    "xoauth2": "^1.2.0"
+  }
+}
