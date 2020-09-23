@@ -6,9 +6,18 @@ const DomElements = {
     line1: document.querySelector('.line1'),
     line2: document.querySelector('.line2'),
     line3: document.querySelector('.line3'),
+    navLinks: document.querySelectorAll('.navLink'),
+    homeDiv: document.querySelector('.banner'),
+    aboutDiv: document.querySelector('.about'),
+    educationDiv: document.querySelector('.education'),
+    skillsDiv: document.querySelector('.skills'),
+    projectsDiv: document.querySelector('.projects'),
+    contactDiv: document.querySelector('.contact'),
 }
 
 let ok = 0;
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 function transformMenuToClose() {
     DomElements.line1.style.transform = "rotate(45deg)"
@@ -26,12 +35,15 @@ function transformMenuToNormal() {
     DomElements.line1.style.marginTop = "0px"
 }
 
-function closeNav() {
-    DomElements.navBar.style.transform = "translateX(-320px)";
-    DomElements.hamburgerMenu.style.transform = "translateX(-320px)";
-    DomElements.rightSide.style.marginLeft = "0px";
-    transformMenuToNormal();
-    ok = 0;
+function closeNav(check) {
+    if (check === 1) {
+        DomElements.navBar.style.transform = "translateX(-320px)";
+        DomElements.hamburgerMenu.style.transform = "translateX(-320px)";
+        DomElements.rightSide.style.marginLeft = "0px";
+        transformMenuToNormal();
+        ok = 0;
+    }
+
 }
 
 DomElements.hamburgerMenu.addEventListener('click', () => {
@@ -43,25 +55,42 @@ DomElements.hamburgerMenu.addEventListener('click', () => {
         ok = 1;
     }
     else {
-        closeNav();
+        closeNav(ok);
     }
 
 })
 
 window.addEventListener('scroll', () => {
-    if (window.innerWidth > 750) {
-        if (ok === 1) {
-            closeNav();
-        }
-    }
+    if (!isMobile)
+        closeNav(ok);
+
+
 })
 
 window.addEventListener('touchmove', () => {
-    if (ok === 1) {
-        closeNav();
-    }
-
+    closeNav(ok);
 })
+
+function activateNavLink(id) {
+    DomElements.navLinks.forEach(el => {
+        el.classList.remove('active');
+    })
+    DomElements.navLinks[id].classList.add('active');
+}
+
+function scrollToDiv(div) {
+    if (isMobile) {
+        setTimeout(() => {
+            div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 400)
+    }
+    else
+        div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+
+
+
 
 
 
