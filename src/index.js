@@ -13,6 +13,10 @@ const DomElements = {
     skillsDiv: document.querySelector('.skills'),
     projectsDiv: document.querySelector('.projects'),
     contactDiv: document.querySelector('.contact'),
+    viewMoreButton: document.querySelectorAll('.viewMore'),
+    webArea: document.querySelector('.web'),
+    artArea: document.querySelector('.art'),
+    categoryButtons: document.querySelectorAll('.projectLi')
 }
 
 let ok = 0;
@@ -81,12 +85,53 @@ function activateNavLink(id) {
 function scrollToDiv(div) {
     if (isMobile) {
         setTimeout(() => {
-            div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            div.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 400)
     }
     else
-        div.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        div.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+function viewMore(category) {
+    let tiles = document.querySelectorAll(`.project-tile-${category}`);
+    for (let i = 2; i < tiles.length; i++) {
+        tiles[i].classList.toggle('hidden')
+    }
+    let id = category === 'web' ? 0 : 1;
+    let markup = DomElements.viewMoreButton[id].innerHTML;
+    if (markup === 'VIEW MORE <i class="fa fa-chevron-right" aria-hidden="true"></i>')
+        markup = 'VIEW LESS <i class="fa fa-chevron-up" aria-hidden="true"></i>';
+    else
+        markup = 'VIEW MORE <i class="fa fa-chevron-right" aria-hidden="true"></i>';
+    DomElements.viewMoreButton[id].innerHTML = markup;
+}
+
+
+DomElements.categoryButtons[0].addEventListener('click', () => {
+    DomElements.categoryButtons[0].classList.add('selected');
+    DomElements.categoryButtons[1].classList.remove('selected');
+    DomElements.webArea.style.display = 'flex';
+    DomElements.artArea.style.display = 'none';
+})
+
+DomElements.categoryButtons[1].addEventListener('click', () => {
+    DomElements.categoryButtons[1].classList.add('selected');
+    DomElements.categoryButtons[0].classList.remove('selected');
+    DomElements.webArea.style.display = 'none';
+    DomElements.artArea.style.display = 'flex';
+})
+
+DomElements.viewMoreButton[0].addEventListener('click', function () {
+    viewMore('web');
+    scrollToDiv(DomElements.projectsDiv);
+})
+
+DomElements.viewMoreButton[1].addEventListener('click', function () {
+    viewMore('art');
+    scrollToDiv(DomElements.projectsDiv);
+})
+
+
 
 
 
