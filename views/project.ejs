@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= project.title %></title>
+    <link rel="stylesheet" href="projectStyle.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="projectTitle">Project title</div>
+        <div class="photoCarousell">
+            <div class="photoContainer"></div>
+            <div class="photoSelection">
+                <div class="dot "></div>
+                <div class="dot "></div>
+                <div class="dot "></div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="smallTitle">Description</div>
+            <div class="bigTitle">About project</div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, atque veniam odio
+                recusandae temporibus delectus expedita eaque neque dolorem asperiores? Voluptas quia itaque dolor. Ex
+                assumenda pariatur quaerat quisquam voluptates.
+                Delectus explicabo sapiente debitis tempore omnis illum? Esse aliquid minima, sed nobis est vitae. Quae
+                blanditiis tempore possimus esse? Eius animi doloribus dignissimos rem quae ut, facere nostrum modi
+                reprehenderit.
+                <br><br>
+
+                Debitis quas non, provident adipisci error facere omnis eveniet ipsum placeat totam aut recusandae
+                tempore, earum alias molestiae labore! Pariatur ex porro autem mollitia ab eum perspiciatis est
+                aspernatur voluptas.
+                Facere libero dolorem provident nulla dignissimos ipsam est ipsum! Quae molestias ab dolorem dicta
+                suscipit velit neque magni impedit harum reiciendis obcaecati qui, unde quasi illo hic expedita error
+                cum.</div>
+        </div>
+
+        <div class="links">
+            <div class="smallTitle">Links</div>
+            <div class="bigTitle">View source code and project</div>
+            <div class="flexContainer">
+                <a href="imageLink"><img
+                        src="https://github-readme-stats.vercel.app/api/pin/?username=ssebi1&repo=DailyPlay&show_owner=true"
+                        alt=""></a>
+                <a href="websiteLink">
+                    <div class="website">Get to website for a live demo.</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        const images = ['./Images/banner.png', './Images/cover_image.jpg']
+        const dots = document.querySelectorAll('.dot');
+
+        function init() {
+            activateDot(0);
+            changeImage(0);
+        }
+
+        init();
+
+        function activateDot(id) {
+            dots.forEach(el => {
+                el.classList.remove('active');
+                el.classList.add('unactive');
+            })
+            dots[id].classList.remove('unactive');
+            dots[id].classList.add('active');
+        }
+
+        function changeImage(id) {
+            const imageContainer = document.querySelector('.photoContainer');
+            imageContainer.style.backgroundImage = `url(${images[id]})`;
+        }
+
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].addEventListener('click', () => {
+                activateDot(i);
+                changeImage(i);
+            })
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -325,6 +325,11 @@ body {
 	color: #777;
 }
 
+.projectArea a {
+	text-decoration: none;
+	color: black;
+}
+
 @media only screen and (max-width: 1060px) and (min-width: 781px) {
 	.project-tile {
 		max-width: none;
