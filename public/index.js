@@ -20,6 +20,7 @@ const DomElements = {
 }
 
 let ok = 0;
+const language = document.querySelector('.languageDetect').value;
 
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -95,14 +96,23 @@ function scrollToDiv(div) {
 function viewMore(category) {
     let tiles = document.querySelectorAll(`.project-tile-${category}`);
     for (let i = 2; i < tiles.length; i++) {
-        tiles[i].classList.toggle('hidden')
+        tiles[i].classList.toggle('hidden');
     }
     let id = category === 'web' ? 0 : 1;
     let markup = DomElements.viewMoreButton[id].innerHTML;
-    if (markup === 'VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i>')
-        markup = 'VIEW LESS <i class="fa fa-chevron-up" aria-hidden="true"></i>';
-    else
-        markup = 'VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i>';
+    if (language === 'en') {
+        if (markup === 'VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i>')
+            markup = 'VIEW LESS <i class="fa fa-chevron-up" aria-hidden="true"></i>';
+        else
+            markup = 'VIEW MORE <i class="fa fa-chevron-down" aria-hidden="true"></i>';
+    }
+    else if (language === 'ro') {
+        if (markup === 'VEZI MAI MULT <i class="fa fa-chevron-down" aria-hidden="true"></i>')
+            markup = 'VIEW MAI PUȚIN <i class="fa fa-chevron-up" aria-hidden="true"></i>';
+        else
+            markup = 'VEZI MAI MULT <i class="fa fa-chevron-down" aria-hidden="true"></i>';
+    }
+
     DomElements.viewMoreButton[id].innerHTML = markup;
 }
 

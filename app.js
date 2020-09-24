@@ -20,7 +20,15 @@ app.listen(port);
 
 //Routes
 app.get('/', (req, res) => {
-    res.render('index');
+    const language = req.query.lng;
+    if (language === 'ro')
+        res.render('index-romanian', {
+            language: 'ro'
+        });
+    else
+        res.render('index', {
+            language: 'en'
+        });
 })
 
 //Reading data from data.json

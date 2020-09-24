@@ -100,6 +100,35 @@ body {
 	margin-top: 50px;
 }
 
+.languageSelect {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.language {
+	width: 30px;
+	height: 20px;
+	margin: 5px;
+	background-position: center;
+	background-size: cover;
+	border: 2px solid #F2F3F7;
+	cursor: pointer;
+}
+
+.english {
+	background-image: url('./Images/english.png');
+}
+
+.romanian {
+	background-image: url('./Images/romanian.png');
+}
+
 .banner {
 	position: relative;
 	width: 100%;
