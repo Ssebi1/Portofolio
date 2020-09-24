@@ -91,6 +91,7 @@
 }
 
 .flexContainer {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -99,7 +100,8 @@
 }
 
 .website {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 120px;
     background-color: white;
     display: flex;
@@ -108,7 +110,7 @@
     font-size: 20px;
     border-radius: 5px;
     margin: 10px;
-    border: 0.5px solid rgba(192, 192, 192, 0.473);
+    border: 0.4px solid rgba(192, 192, 192, 0.473);
     cursor: pointer;
 }
 
@@ -120,4 +122,6 @@
 .flexContainer img {
     margin: 10px;
     cursor: pointer;
+    max-width: 400px;
+    width: 95%;
 }

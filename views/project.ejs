@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= project.title %></title>
+    <title><%= project.title %> - Dancau Sebastian</title>
     <link rel="stylesheet" href="projectStyle.css">
 </head>
 
@@ -15,48 +15,39 @@
         <div class="photoCarousell">
             <div class="photoContainer"></div>
             <div class="photoSelection">
+                <% for(let i=0 ; i< project.images.length; i++) { %>
                 <div class="dot "></div>
-                <div class="dot "></div>
-                <div class="dot "></div>
+                <% } %>
             </div>
         </div>
         <div class="description">
             <div class="smallTitle">Description</div>
             <div class="bigTitle">About project</div>
-            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, atque veniam odio
-                recusandae temporibus delectus expedita eaque neque dolorem asperiores? Voluptas quia itaque dolor. Ex
-                assumenda pariatur quaerat quisquam voluptates.
-                Delectus explicabo sapiente debitis tempore omnis illum? Esse aliquid minima, sed nobis est vitae. Quae
-                blanditiis tempore possimus esse? Eius animi doloribus dignissimos rem quae ut, facere nostrum modi
-                reprehenderit.
-                <br><br>
-
-                Debitis quas non, provident adipisci error facere omnis eveniet ipsum placeat totam aut recusandae
-                tempore, earum alias molestiae labore! Pariatur ex porro autem mollitia ab eum perspiciatis est
-                aspernatur voluptas.
-                Facere libero dolorem provident nulla dignissimos ipsam est ipsum! Quae molestias ab dolorem dicta
-                suscipit velit neque magni impedit harum reiciendis obcaecati qui, unde quasi illo hic expedita error
-                cum.</div>
+            <div class="text"></div>
         </div>
 
         <div class="links">
             <div class="smallTitle">Links</div>
             <div class="bigTitle">View source code and project</div>
             <div class="flexContainer">
-                <a href="imageLink"><img
+                <a href="<%= project.githubLink %>" target="_blank"><img
                         src="https://github-readme-stats.vercel.app/api/pin/?username=ssebi1&repo=DailyPlay&show_owner=true"
-                        alt=""></a>
-                <a href="websiteLink">
-                    <div class="website">Get to website for a live demo.</div>
+                        alt="">
                 </a>
+
+                <div class="website">Get to website for a live demo.</div>
+
             </div>
         </div>
 
+        <input type="hidden" class="imagesArray" value="<%= project.images %>">
+        <input type="hidden" class="descriptionText" value="<%= project.description %>">
+        <input type="hidden" class="websiteLink" value="<%= project.websiteLink %>">
 
     </div>
 
     <script>
-        const images = ['./Images/banner.png', './Images/cover_image.jpg']
+        const images = document.querySelector('.imagesArray').value.split(',');
         const dots = document.querySelectorAll('.dot');
 
         function init() {
@@ -87,7 +78,15 @@
             })
         }
 
+        // Open website event
+        document.querySelector('.website').addEventListener('click', () => {
+            const url = document.querySelector('.websiteLink').value;
+            window.open(url, '_blank');
 
+        })
+
+        //Filling description area
+        document.querySelector('.text').innerHTML = document.querySelector('.descriptionText').value;
 
     </script>
 </body>
