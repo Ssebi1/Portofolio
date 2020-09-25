@@ -7,59 +7,58 @@
     </ul>
 
     <div class="projectArea web">
-        <% let ctWeb = 0 %>
-        <% for(let i=0; i< projects.length; i++) { %>
-        <% if(projects[i].type === 'web') { %>
-        <% ctWeb++; %>
-        <a href="/project?id=<%= projects[i].id %>&lng=<%= language %>">
-            <% if(ctWeb<=2) {%>
-            <div class="project-tile project-tile-web web">
-                <% } else {%>
-                <div class="project-tile project-tile-web web hidden">
-                    <% } %>
-
-                    <div class="project-image" style="background-image: url('<%= projects[i].bannerImage %>');"></div>
-                    <div class="project-content">
-                        <div class="project-title"><%= projects[i].title %></div>
-                        <div class=" project-description"><%= projects[i].smallDescription %></div>
-                    </div>
+        <div class="projectsFlexContainer">
+            <% for(let i=0; i< projects.length; i++) { %>
+            <% if(projects[i].type === 'web') { %>
+            <!-- href="/project?id=<%= projects[i].id %>&lng=<%= language %>"  -->
+            <a class="project-tile project-tile-web" href="/project?id=<%= projects[i].id %>&lng=<%= language %>">
+                <div class=" project-image" style="background-image: url('<%= projects[i].bannerImage %>');">
                 </div>
-        </a>
-        <% } %>
-        <% } %>
-
-        <button class="viewMore"><%= buttonText %> <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-
-
+                <div class="project-content">
+                    <div class="project-title"><%= projects[i].title %></div>
+                    <div class=" project-description"><%= projects[i].smallDescription %> </div>
+                </div>
+            </a>
+            <% } %>
+            <% } %>
+        </div>
+        <div class="buttonFlexContainer">
+            <button class="viewMore"><%= buttonText %> <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+        </div>
     </div>
 
+
     <div class="projectArea art">
-
-        <% let ctArt = 0; %>
-        <% for(let i=0; i< projects.length; i++) { %>
-        <% if(projects[i].type === 'art') { %>
-        <% ctArt++; %>
-        <a href="/project?id=<%= projects[i].id %>&lng=<%= language %>">
-            <% if(ctArt<=2) {%>
-            <div class="project-tile project-tile-art">
-                <% } else {%>
-                <div class="project-tile project-tile-art hidden">
-                    <% } %>
-
-                    <div class="project-image" style="background-image: url('<%= projects[i].bannerImage %>');"></div>
-                    <div class="project-content">
-                        <div class="project-title"><%= projects[i].title %></div>
-                        <div class=" project-description"><%= projects[i].smallDescription %></div>
-                    </div>
+        <div class="projectsFlexContainer">
+            <% for(let i=0; i< projects.length; i++) { %>
+            <% if(projects[i].type === 'art') { %>
+            <!-- href="/project?id=<%= projects[i].id %>&lng=<%= language %>"  -->
+            <a class="project-tile project-tile-art" href="/project?id=<%= projects[i].id %>&lng=<%= language %>">
+                <div class=" project-image" style="background-image: url('<%= projects[i].bannerImage %>');">
                 </div>
-        </a>
-        <% } %>
-        <% } %>
-
-
-        <button class="viewMore"><%= buttonText %> <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-
-
+                <div class="project-content">
+                    <div class="project-title"><%= projects[i].title %></div>
+                    <div class=" project-description"><%= projects[i].smallDescription %> </div>
+                </div>
+            </a>
+            <% } %>
+            <% } %>
+        </div>
+        <div class="buttonFlexContainer">
+            <button class="viewMore"><%= buttonText %> <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+        </div>
     </div>
 
 </div>
+
+<script>
+    //Only showing 2 projects on each category
+    const webProjects = document.querySelectorAll('.project-tile-web');
+    const artProjects = document.querySelectorAll('.project-tile-art');
+
+    for (let i = 2; i < webProjects.length; i++)
+        webProjects[i].classList.add('hidden');
+
+    for (let i = 2; i < artProjects.length; i++)
+        artProjects[i].classList.add('hidden');
+</script>

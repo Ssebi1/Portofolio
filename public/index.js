@@ -120,7 +120,7 @@ function viewMore(category) {
 DomElements.categoryButtons[0].addEventListener('click', () => {
     DomElements.categoryButtons[0].classList.add('selected');
     DomElements.categoryButtons[1].classList.remove('selected');
-    DomElements.webArea.style.display = 'flex';
+    DomElements.webArea.style.display = 'inherit';
     DomElements.artArea.style.display = 'none';
 })
 
@@ -128,7 +128,7 @@ DomElements.categoryButtons[1].addEventListener('click', () => {
     DomElements.categoryButtons[1].classList.add('selected');
     DomElements.categoryButtons[0].classList.remove('selected');
     DomElements.webArea.style.display = 'none';
-    DomElements.artArea.style.display = 'flex';
+    DomElements.artArea.style.display = 'inherit';
 })
 
 DomElements.viewMoreButton[0].addEventListener('click', function () {
