@@ -40,11 +40,20 @@ function transformMenuToNormal() {
     DomElements.line1.style.marginTop = "0px"
 }
 
+function openNav() {
+    DomElements.navBar.style.transform = "translateX(0px)";
+    DomElements.navBar.style.width = "100%";
+    DomElements.hamburgerMenu.style.left = "unset";
+    DomElements.hamburgerMenu.style.right = "10px";
+    transformMenuToClose();
+    ok = 1;
+}
+
 function closeNav(check) {
     if (check === 1) {
         DomElements.navBar.style.transform = "translateX(-320px)";
-        DomElements.hamburgerMenu.style.transform = "translateX(-320px)";
-        DomElements.rightSide.style.marginLeft = "0px";
+        DomElements.navBar.style.width = "320px";
+        DomElements.hamburgerMenu.style.left = "10px";
         transformMenuToNormal();
         ok = 0;
     }
@@ -53,11 +62,7 @@ function closeNav(check) {
 
 DomElements.hamburgerMenu.addEventListener('click', () => {
     if (ok === 0) {
-        DomElements.navBar.style.transform = "translateX(0px)";
-        DomElements.hamburgerMenu.style.transform = "translateX(0px)";
-        DomElements.rightSide.style.marginLeft = "320px";
-        transformMenuToClose();
-        ok = 1;
+        openNav();
     }
     else {
         closeNav(ok);
@@ -65,15 +70,21 @@ DomElements.hamburgerMenu.addEventListener('click', () => {
 
 })
 
-window.addEventListener('scroll', () => {
-    if (!isMobile)
-        closeNav(ok);
-
-
-})
-
-window.addEventListener('touchmove', () => {
-    closeNav(ok);
+window.addEventListener('resize', () => {
+    let length = window.innerWidth;
+    if (length > 780) {
+        DomElements.navBar.style.transform = "translateX(0px)";
+        DomElements.navBar.style.width = "320px";
+        DomElements.hamburgerMenu.style.left = "unset";
+        DomElements.hamburgerMenu.style.right = "10px";
+        transformMenuToClose();
+    }
+    else if (length <= 780) {
+        DomElements.navBar.style.transform = "translateX(-320px)";
+        DomElements.hamburgerMenu.style.right = "unset";
+        DomElements.hamburgerMenu.style.left = "10px";
+        transformMenuToNormal();
+    }
 })
 
 function activateNavLink(id) {
