@@ -96,6 +96,7 @@ var transporter = nodemailer.createTransport({
 
 app.post('/message', (req, res) => {
     const { email, subject, message } = req.body;
+    const language = req.query.lng;
     var mailOptions = {
         from: email,
         to: 'sebidancau@yahoo.com',
@@ -107,7 +108,9 @@ app.post('/message', (req, res) => {
         if (error) {
             console.log(error);
         } else {
-            res.render('messageConfirmation');
+            res.render('messageConfirmation', {
+                language
+            });
         }
     });
 

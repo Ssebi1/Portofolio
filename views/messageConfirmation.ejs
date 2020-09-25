@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Sent</title>
+    <title>
+        <% if(language === 'en') { %>
+        Message Sent
+        <% } else { %>
+        Mesaj trimis
+        <% } %>
+    </title>
     <style>
         .flexBox {
             display: flex;
@@ -63,13 +69,30 @@
 
     <div class="flexBox">
         <div class="box">
-            <div class="title">Message sent!</div>
-            <div class="text">Thank you for contacting me. <br> You will receive a reply as soon as possible. <br> Have
-                a
-                great day! 😊</div>
+            <div class="title">
+                <% if(language === 'en') { %>
+                Message Sent!
+                <% } else { %>
+                Mesaj trimis!
+                <% } %>
+            </div>
+            <div class="text">
+                <% if(language === 'en') { %>
+                Thank you for contacting me. <br> You will receive a reply as soon as possible. <br> Have a great day!
+                😊</div>
+            <% } else { %>
+            Mulțumesc că m-ai contactat. <br> O să primești un raspuns cat mai repede posibil. <br> Să ai o zi buna! 😊
         </div>
-        <button class="button">Get back to the website</button>
+        <% } %>
+
     </div>
+    <button class="button">
+        <% if(language === 'en') { %>
+        Get back to the website
+        <% } else { %>
+        Mergi inapoi la website
+        <% } %>
+    </button>
 
     <script>
         document.querySelector('.button').addEventListener('click', () => {

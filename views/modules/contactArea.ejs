@@ -21,7 +21,7 @@
 
         </div>
         <div class="column2">
-            <form action="/message" method="POST">
+            <form action="/message?lng=<%= language %>" method="POST">
                 <input type="email" name="email" placeholder="<%= placeholder[0] %>" required>
                 <input type="text" name="subject" placeholder="<%= placeholder[1] %>" required>
                 <textarea name="message" required placeholder="<%= placeholder[2] %>"></textarea>
