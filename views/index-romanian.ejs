@@ -24,41 +24,27 @@
 		<!-- Left area -->
 		<div class="leftside">
 
-			<div class="profile">
-				<img src="../Images/profile_image.jpg">
-			</div>
+			<!-- Profile image, name and subtitle -->
+			<%- include('modules/profileShowcase',{
+				profileCountry: 'ÎN ROMÂNIA'
+			}) %>
 
-			<div class="text">
-				<div class="name">Dancau Sebastian</div>
-				<div class="subname">
-					<div style="color:#02b0e0; display: inline-block;"> WEB DEVELOPER </div> ÎN ROMÂNIA
-				</div>
-			</div>
+			<!-- Navigation -->
+			<%- include('modules/navigation',{
+					navigationItem: ['Acasă','Despre','Educație','Cunoștințe','Proiecte','Contact']
+			}) %>
 
-			<div class="navigation">
-				<ul>
-					<li><a class="navLink" onclick="closeNav(ok);scrollToDiv(DomElements.homeDiv)">Acasă</a></li>
-					<li><a class="navLink" onclick="closeNav(ok);scrollToDiv(DomElements.aboutDiv)">Despre</a></li>
-					<li><a class="navLink" onclick="closeNav(ok);scrollToDiv(DomElements.educationDiv)">Educație</a>
-					</li>
-					<li><a class="navLink" onclick=" closeNav(ok);scrollToDiv(DomElements.skillsDiv)">Cunoștințe</a>
-					</li>
-					<li><a class="navLink" onclick="closeNav(ok);scrollToDiv(DomElements.projectsDiv)">Proiecte</a>
-					</li>
-					<li><a class="navLink" onclick="closeNav(ok);scrollToDiv(DomElements.contactDiv)">Contact</a></li>
-				</ul>
-			</div>
+			<!-- Footer -->
+			<%- include('modules/footer',{
+				footerContent: 'Copyright© 2020 Toate drepturile rezervate<br>Creat de <b>Dancau Sebastian</b>'
+			}) %>
 
-			<div class="footer">
-				Copyright© 2020 Toate drepturile rezervate<br>
-				Creat de <b>Dancau Sebastian</b>
-			</div>
-
+			<!-- Language selection -->
 			<div class="languageSelect">
-				<a href="?lng=en">
+				<a href="/?lng=en">
 					<div class="language english"></div>
 				</a>
-				<a href="?lng=ro">
+				<a href="/?lng=ro">
 					<div class="language romanian" style="border:2px solid black;"></div>
 				</a>
 			</div>
@@ -70,305 +56,99 @@
 		<div class="rightside">
 
 			<!-- Banner image and text -->
-			<div class="banner">
-				<div class="banner-text">
-					<div class="banner-big-text">Salut!<br> Eu sunt Sebi</div>
-					<br>
-					<div class="banner-small-text">Și sunt un tănăr pasionat de programare.</div>
-					<br>
-					<button class="banner-button">DESCARCĂ CV <i class="fa fa-download"></i></button>
-				</div>
-			</div>
+			<%- include('modules/banner',{
+				bannerTitle: "Salut!<br> Eu sunt Sebi",
+				subTitle: 'Și sunt un tănăr pasionat de programare.',
+				buttonText: 'DESCARCĂ CV'
+			}) %>
 
 
 
 			<!-- About area -->
-			<div class="about">
-				<div class="about-smallTitle smallTitle">Despre mine</div>
-				<div class="about-bigTitle bigTitle">Cine sunt eu?</div>
-				<div class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora velit ea
-					ipsam nostrum eveniet eius incidunt aliquam, laudantium beatae, porro totam. Eos doloremque sit eum
-					perspiciatis aperiam dicta, at error.
-					Iure iusto laboriosam veniam autem doloribus illo numquam omnis asperiores reiciendis tempore
-					exercitationem eligendi explicabo quaerat repudiandae quasi, libero odio voluptas doloremque porro
-					delectus modi at molestiae nostrum!<br><br> Ex ratione ipsum quia? Tenetur repellat autem quasi nam
-					voluptatum
-					fuga?
-					Pariatur, itaque minima? Reiciendis, assumenda.
-					Reiciendis, praesentium itaque debitis aspernatur natus dolores eum vitae, eius facere illo
-					consectetur repellendus similique neque?</div>
-			</div>
+			<%- include('modules/aboutArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Despre mine',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Cine sunt eu?',
+
+				<!-- Content goes here -->
+				aboutContent: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora velit ea ipsam nostrum eveniet eius incidunt aliquam, laudantium beatae, porro totam. Eos doloremque sit eum perspiciatis aperiam dicta, at error. Iure iusto laboriosam veniam autem doloribus illo numquam omnis asperiores reiciendis tempore exercitationem eligendi explicabo quaerat repudiandae quasi, libero odio voluptas doloremque porro delectus modi at molestiae nostrum!<br><br> Ex ratione ipsum quia? Tenetur repellat autem quasi nam voluptatum fuga? Pariatur, itaque minima? Reiciendis, assumenda. Reiciendis, praesentium itaque debitis aspernatur natus dolores eum vitae, eius facere illo consectetur repellendus similique neque?"
+			}) %>
+
 
 
 			<!-- Education area -->
-			<div class="education">
-				<div class="education-smallTitle smallTitle">Istoricul educației</div>
-				<div class="education-bigTitle bigTitle">Educație</div>
-				<div class="education-tile">
-					<div class="colorBox" style="background-color:#2d98f0"></div>
-					<div class="tileContent">
-						<div class="tileText">
-							<span class="educationyear">2016-2020</span><br>Colegiul "Mircea Cel Bătrân", Rm. Vâlcea
-						</div>
-					</div>
-				</div>
-				<div class="education-tile">
-					<div class="colorBox" style="background-color: #ec5554;"></div>
-					<div class="tileContent">
-						<div class="tileText">
-							<span class="educationyear">2020-present</span><br>Universitatea București, Facultatea de
-							Matematică și Informatică</div>
-					</div>
-				</div>
-				<div class="education-tile">
-					<div class="colorBox" style="background-color: #f9bf40;"></div>
-					<div class="tileContent">
-						<div class="tileText">
-							<span class="educationyear">2018</span><br>Certificare IC3 Digital Literacy </div>
-					</div>
-				</div>
-				<div class="education-tile">
-					<div class="colorBox" style="background-color: #30a499;"></div>
-					<div class="tileContent">
-						<div class="tileText">
-							<span class="educationyear">2020</span><br>Cursurile Php fundamentals de Edwin Diaz si
-							Complete
-							Javascript de Jonas
-							Schmedtmann completate</div>
-					</div>
-				</div>
-			</div>
+			<%- include('modules/educationArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Istoricul educației',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Educație',
+
+				<!-- Education tiles goes here -->
+				education: [
+				'2016-2020</span><br> Colegiul "Mircea Cel Bătrân", Rm. Vâlcea',
+				'2020-present</span><br> Universitatea București, Facultatea de Matematică și Informatică',
+				'2018</span><br> Certificare IC3 Digital Literacy',
+				'2020</span><br> Cursurile Php fundamentals de Edwin Diaz si Complete Javascript de Jonas Schmedtmann completate'
+				]
+			}) %>
 
 
 
 			<!-- Skills area -->
-			<div class="skills">
-				<div class="skills-smalltitle smallTitle">Cunoștințe</div>
-				<div class="skills-bigTitle bigTitle">Top limbaje și unelte</div>
+			<%- include('modules/skillsArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Cunoștințe',
 
-				<div class=" skillTile" style="border-bottom:3px solid #57adf3;">
-					<div class="skillTitle">Limbaje de programare</div>
-					<div class="skillArea">
-						<img class="skillImage" src="../Images/html.png" alt="Html5">
-						<img class="skillImage" src="../Images/css.png" alt="Css">
-						<img class="skillImage" src="../Images/javascipt.png" alt="Javascript">
-						<img class="skillImage" src="../Images/nodejs.png" alt="Nodejs">
-						<img class="skillImage" src="../Images/express.png" alt="Express">
-						<img class="skillImage" src="../Images/php.png" alt="Php">
-						<img class="skillImage" src="../Images/mysql.png" alt="Mysql">
-					</div>
-				</div>
-				<div class=" skillTile" style="border-bottom:3px solid #facc66;">
-					<div class="skillTitle">Unelte</div>
-					<div class="skillArea">
-						<img class="skillImage" src="../Images/github.svg" alt="Github">
-						<img class="skillImage" src="../Images/Git.png" alt="Git">
-						<img class="skillImage" src="../Images/heroku.png" alt="Heroku">
-						<img class="skillImage" src="../Images/npm.png" alt="npm">
-						<img class="skillImage" src="../Images/webpack.png" alt="Webpack">
-						<img class="skillImage" src="../Images/babel.png" alt="Babel">
-						<img class="skillImage" src="../Images/XAMPP.png" alt="Xampp">
-					</div>
+				<!-- Big title goes here -->
+				bigTitle: 'Top limbaje și unelte',
 
-				</div>
-				<div class="skillTile" style="border-bottom:3px solid #f07776;">
-					<div class="skillTitle">Design</div>
-					<div class="skillArea">
-						<img class="skillImage" src="../Images/photoshop.png" alt="Photoshop">
-						<img class="skillImage" src="../Images/xd.png" alt="Adobe XD">
-					</div>
-				</div>
-
-			</div>
+				<!-- Skill categories titles goes here -->
+				skillsTitle: [
+				'Limbaje de programare',
+				'Unelte',
+				'Design',
+				]
+			}) %>
 
 			<!-- Projects area -->
-			<div class="projects">
-				<div class="projects-smalltitle smallTitle">Proiecte</div>
-				<div class="projects-bigTitle bigTitle">Munca mea recenta</div>
-				<ul class="project-categories">
-					<li class="projectLi selected">Web</li>
-					<li class="projectLi">Design</li>
-				</ul>
+			<%- include('modules/projectsArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Proiecte',
 
-				<div class="projectArea web">
+				<!-- Big title goes here -->
+				bigTitle: 'Munca mea recenta',
 
-					<a href="/project?id=0">
-						<div class="project-tile project-tile-web web">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Daily Play 1</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque</div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=1">
-						<div class="project-tile project-tile-web">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Daily Play 2</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=2">
-						<div class="project-tile project-tile-web hidden">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Daily Play 3</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=3">
-						<div class="project-tile project-tile-web hidden">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Daily Play 4</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=4">
-						<div class="project-tile project-tile-web hidden">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Daily Play 3</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=5">
-						<div class="project-tile project-tile-web hidden">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Daily Play 4</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-					<button class="viewMore">VEZI MAI MULT <i class="fa fa-chevron-down"
-							aria-hidden="true"></i></button>
-
-
-				</div>
-
-				<div class="projectArea art">
-					<a href="/project?id=6">
-						<div class="project-tile project-tile-art">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Design 1</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque</div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=7">
-						<div class="project-tile project-tile-art">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Design2</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=8">
-						<div class="project-tile project-tile-art hidden">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Design 3</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<a href="/project?id=9">
-						<div class="project-tile project-tile-art hidden">
-							<div class="project-image"></div>
-							<div class="project-content">
-								<div class="project-title">Design 4</div>
-								<div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing
-									elit.
-									Animi doloremque </div>
-							</div>
-						</div>
-					</a>
-
-					<button class="viewMore">VEZI MAI MULT <i class="fa fa-chevron-down"
-							aria-hidden="true"></i></button>
-
-
-				</div>
-
-			</div>
+				<!-- Button text -->
+				buttonText: 'VEZI MAI MULT'
+			}) %>
 
 			<!-- Contact area -->
-			<div class="contact">
-				<div class="contact-smallTitle smallTitle">Contact</div>
-				<div class="contact-bigTitle bigTitle">Intra in contact cu mine</div>
+			<%- include('modules/contactArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Contact',
 
-				<div class="contactArea">
-					<div class="column1">
-						<div class="contact-tile">
-							<div class="contact-square"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-							<div class="contact-text">sebidancau@yahoo.com</div>
-						</div>
+				<!-- Big title goes here -->
+				bigTitle: 'Intră în contact cu mine',
 
-						<div class="contact-tile">
-							<div class="contact-square"><i class="fa fa-phone" aria-hidden="true"></i></div>
-							<div class="contact-text">+40 769 961 100</div>
-						</div>
+				<!-- Location goes here -->
+				location: 'Romania, București',
 
-						<div class="contact-tile">
-							<div class="contact-square"><i class="fa fa-map-o" aria-hidden="true"></i></div>
-							<div class="contact-text">Romania, București</div>
-						</div>
+				<!-- Placeholders for inputs goes here -->
+				placeholder: [
+				'Email',
+				'Subiect',
+				'Mesaj',
+				],
 
-					</div>
-					<div class="column2">
-						<form action="/message" method="POST">
-							<input type="email" name="email" placeholder="Email" required>
-							<input type="text" name="subject" placeholder="Subiect" required>
-							<textarea name="message" required placeholder="Mesaj"></textarea>
-							<button type="submit">Trimite Mesaj</button>
-						</form>
-					</div>
-				</div>
-
-
-			</div>
-
+				<!-- Submit button text goes here -->
+				submitButton: 'Trimite Mesaj'
+			}) %>
 
 
 		</div>
-
-
-
-
 
 	</div>
 

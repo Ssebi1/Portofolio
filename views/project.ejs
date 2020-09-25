@@ -11,7 +11,7 @@
 <body>
 
     <div class="main">
-        <div class="projectTitle">Project title</div>
+        <div class="projectTitle"><%= project.title %></div>
         <div class="photoCarousell">
             <div class="photoContainer"></div>
             <div class="photoSelection">
@@ -23,7 +23,7 @@
         <div class="description">
             <div class="smallTitle">Description</div>
             <div class="bigTitle">About project</div>
-            <div class="text"></div>
+            <div class="text"><%- project.fullDescription %></div>
         </div>
 
         <div class="links">
@@ -84,9 +84,6 @@
             window.open(url, '_blank');
 
         })
-
-        //Filling description area
-        document.querySelector('.text').innerHTML = document.querySelector('.descriptionText').value;
 
     </script>
 </body>

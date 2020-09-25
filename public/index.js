@@ -108,7 +108,7 @@ function viewMore(category) {
     }
     else if (language === 'ro') {
         if (markup === 'VEZI MAI MULT <i class="fa fa-chevron-down" aria-hidden="true"></i>')
-            markup = 'VIEW MAI PUȚIN <i class="fa fa-chevron-up" aria-hidden="true"></i>';
+            markup = 'VEZI MAI PUȚIN <i class="fa fa-chevron-up" aria-hidden="true"></i>';
         else
             markup = 'VEZI MAI MULT <i class="fa fa-chevron-down" aria-hidden="true"></i>';
     }

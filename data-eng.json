@@ -1,0 +1,114 @@
+[
+    {
+        "type": "web",
+        "id": "0",
+        "title": "Daily Play 1",
+        "bannerImage": "./Images/cover_image.jpg",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "web",
+        "id": "1",
+        "title": "Daily Play 2",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "web",
+        "id": "2",
+        "title": "Daily Play 3",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "web",
+        "id": "3",
+        "title": "Daily Play 4",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "art",
+        "id": "4",
+        "title": "Design 1",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "art",
+        "id": "5",
+        "title": "Design 2",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "art",
+        "id": "6",
+        "title": "Design 3",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    },
+    {
+        "type": "art",
+        "id": "7",
+        "title": "Design 4",
+        "bannerImage": "./Images/banner.png",
+        "images": [
+            "./Images/banner.png",
+            "./Images/cover_image.jpg"
+        ],
+        "smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+        "githubLink": "https://github.com/Ssebi1/DailyPlay",
+        "websiteLink": "https://dailyplay.herokuapp.com/"
+    }
+]

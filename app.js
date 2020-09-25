@@ -18,34 +18,66 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port);
 
+//Reading data from data.json
+
 //Routes
 app.get('/', (req, res) => {
     const language = req.query.lng;
-    if (language === 'ro')
-        res.render('index-romanian', {
-            language: 'ro'
+
+    if (language === 'ro') {
+        fs.readFile('data-ro.json', (error, data) => {
+            if (error) throw error;
+            let projects = JSON.parse(data);
+            res.render('index-romanian', {
+                language: 'ro',
+                projects
+            });
         });
-    else
-        res.render('index', {
-            language: 'en'
+    }
+    else {
+        fs.readFile('data-eng.json', (error, data) => {
+            if (error) throw error;
+            let projects = JSON.parse(data);
+            res.render('index', {
+                language: 'en',
+                projects
+            });
         });
+    }
+
 })
 
-//Reading data from data.json
+
+
 
 
 
 app.get('/project', (req, res) => {
     const id = req.query.id;
-    let rawData = fs.readFile('data.json', (error, data) => {
-        if (error) throw error;
-        let projects = JSON.parse(data);
-        res.render('project',
-            {
-                project: projects[id]
-            }
-        );
-    });
+    const language = req.query.lng;
+    if (language === 'en') {
+        fs.readFile('data-eng.json', (error, data) => {
+            if (error) throw error;
+            let projects = JSON.parse(data);
+            res.render('project',
+                {
+                    project: projects[id]
+                }
+            );
+        });
+    }
+    else if (language === 'ro') {
+        fs.readFile('data-ro.json', (error, data) => {
+            if (error) throw error;
+            let projects = JSON.parse(data);
+            res.render('project',
+                {
+                    project: projects[id]
+                }
+            );
+        });
+    }
+
 
 })
 

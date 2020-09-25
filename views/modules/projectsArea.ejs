@@ -1,0 +1,65 @@
+<div class="projects">
+    <div class="projects-smalltitle smallTitle"><%= smallTitle %></div>
+    <div class="projects-bigTitle bigTitle"><%= bigTitle %></div>
+    <ul class="project-categories">
+        <li class="projectLi selected">Web</li>
+        <li class="projectLi">Design</li>
+    </ul>
+
+    <div class="projectArea web">
+        <% let ctWeb = 0 %>
+        <% for(let i=0; i< projects.length; i++) { %>
+        <% if(projects[i].type === 'web') { %>
+        <% ctWeb++; %>
+        <a href="/project?id=<%= projects[i].id %>&lng=<%= language %>">
+            <% if(ctWeb<=2) {%>
+            <div class="project-tile project-tile-web web">
+                <% } else {%>
+                <div class="project-tile project-tile-web web hidden">
+                    <% } %>
+
+                    <div class="project-image" style="background-image: url('<%= projects[i].bannerImage %>');"></div>
+                    <div class="project-content">
+                        <div class="project-title"><%= projects[i].title %></div>
+                        <div class=" project-description"><%= projects[i].smallDescription %></div>
+                    </div>
+                </div>
+        </a>
+        <% } %>
+        <% } %>
+
+        <button class="viewMore"><%= buttonText %> <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+
+
+    </div>
+
+    <div class="projectArea art">
+
+        <% let ctArt = 0; %>
+        <% for(let i=0; i< projects.length; i++) { %>
+        <% if(projects[i].type === 'art') { %>
+        <% ctArt++; %>
+        <a href="/project?id=<%= projects[i].id %>&lng=<%= language %>">
+            <% if(ctArt<=2) {%>
+            <div class="project-tile project-tile-art">
+                <% } else {%>
+                <div class="project-tile project-tile-art hidden">
+                    <% } %>
+
+                    <div class="project-image" style="background-image: url('<%= projects[i].bannerImage %>');"></div>
+                    <div class="project-content">
+                        <div class="project-title"><%= projects[i].title %></div>
+                        <div class=" project-description"><%= projects[i].smallDescription %></div>
+                    </div>
+                </div>
+        </a>
+        <% } %>
+        <% } %>
+
+
+        <button class="viewMore"><%= buttonText %> <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+
+
+    </div>
+
+</div>

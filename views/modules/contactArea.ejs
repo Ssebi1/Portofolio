@@ -1,0 +1,34 @@
+<div class="contact">
+    <div class="contact-smallTitle smallTitle"><%= smallTitle %></div>
+    <div class="contact-bigTitle bigTitle"><%= bigTitle %></div>
+
+    <div class="contactArea">
+        <div class="column1">
+            <div class="contact-tile">
+                <div class="contact-square"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="contact-text">sebidancau@yahoo.com</div>
+            </div>
+
+            <div class="contact-tile">
+                <div class="contact-square"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="contact-text">+40 769 961 100</div>
+            </div>
+
+            <div class="contact-tile">
+                <div class="contact-square"><i class="fa fa-map-o" aria-hidden="true"></i></div>
+                <div class="contact-text"><%= location %></div>
+            </div>
+
+        </div>
+        <div class="column2">
+            <form action="/message" method="POST">
+                <input type="email" name="email" placeholder="<%= placeholder[0] %>" required>
+                <input type="text" name="subject" placeholder="<%= placeholder[1] %>" required>
+                <textarea name="message" required placeholder="<%= placeholder[2] %>"></textarea>
+                <button type="submit"><%= submitButton %></button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
