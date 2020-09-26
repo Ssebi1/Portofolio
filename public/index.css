@@ -564,7 +564,7 @@ body {
 
 .line {
 	width: 30px;
-	height: 2px;
+	height: 3px;
 	background-color: black;
 	transition: 0.3s ease-in-out;
 }

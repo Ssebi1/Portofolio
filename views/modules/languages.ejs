@@ -1,0 +1,15 @@
+<style>
+    .selectedLanguage {
+        border: 2px solid black;
+    }
+</style>
+
+<div class="languageSelect">
+    <% const lng = language %>
+    <a href="/?lng=en">
+        <div class="language english <% if(lng==='en') {%> selectedLanguage <% } %> "></div>
+    </a>
+    <a href="/?lng=ro">
+        <div class="language romanian <% if(lng==='ro') { %> selectedLanguage <% } %> "></div>
+    </a>
+</div>

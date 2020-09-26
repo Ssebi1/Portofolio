@@ -47,7 +47,7 @@ function transformMenuToClose() {
 	DomElements.line1.style.transform = 'rotate(45deg)';
 	DomElements.line2.style.opacity = '0';
 	DomElements.line3.style.transform = 'rotate(-45deg)';
-	DomElements.line3.style.marginTop = '-8px';
+	DomElements.line3.style.marginTop = '-10px';
 	DomElements.line1.style.marginTop = '10px';
 }
 
