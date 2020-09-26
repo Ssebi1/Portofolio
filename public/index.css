@@ -76,6 +76,7 @@ body {
 }
 
 .navLink {
+	display: inline-block;
 	color: #777;
 	text-decoration: none;
 	cursor: pointer;
@@ -86,13 +87,15 @@ body {
 	margin-top: 35px;
 }
 
-.navLink:hover {
-	border-bottom: 2px solid #02b0e0;
+.underline {
+	height: 1px;
+	background-color: #02b0e0;
+	transform: scaleX(0);
+	transition: transform .2s ease-out;
 }
 
-.active {
-	border-bottom: 2px solid #02b0e0;
-	color: #02b0e0;
+.navLink:hover .underline {
+	transform: scaleX(1);
 }
 
 .footer {
