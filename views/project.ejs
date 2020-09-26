@@ -12,6 +12,11 @@
 
     <div class="main">
         <div class="projectTitle"><%= project.title %></div>
+        <div class="categories">
+            <% project.categories.forEach(el => { %>
+            <div class="category"><%= el %></div>
+            <% }) %>
+        </div>
         <div class="photoCarousell">
             <div class="photoContainer"></div>
             <div class="photoSelection">
