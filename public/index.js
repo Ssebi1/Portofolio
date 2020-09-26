@@ -73,6 +73,7 @@ function closeNav(check) {
 		DomElements.navBar.style.transform = 'translateX(-320px)';
 		DomElements.navBar.style.width = '320px';
 		DomElements.hamburgerMenu.style.left = '10px';
+		DomElements.hamburgerMenu.style.right = 'unset';
 		transformMenuToNormal();
 		ok = 0;
 	}

@@ -1,4 +1,13 @@
-@font-face {
+input,
+textarea,
+button,
+select,
+a,
+div {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+font-face {
 	font-family: regularFont;
 	src: url(../font/Ubuntu-Regular.ttf);
 	/* font-family: libreFont;
