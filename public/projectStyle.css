@@ -5,13 +5,31 @@
 	src: url(../font/LibreBaskerville-Regular.ttf); */
 }
 
+body {
+	margin: 0;
+}
+
 .main {
-	width: 95%;
+	width: 80%;
 	max-width: 900px;
 	margin: 0 auto;
 	height: auto;
 	font-family: regularFont;
-	margin-top: 30px;
+	margin-top: 10px;
+}
+
+.return {
+	text-decoration: none;
+	color: #777;
+	font-size: 20px;
+	position: absolute;
+	top: 22px;
+	transform: translateX(-30px);
+	transition: .15s ease-in-out;
+}
+
+.return:hover {
+	color: black;
 }
 
 .projectTitle {
@@ -92,7 +110,7 @@
 }
 
 .description {
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .text {
@@ -104,7 +122,7 @@
 }
 
 .links {
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 .flexContainer {

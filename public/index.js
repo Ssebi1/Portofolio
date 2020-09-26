@@ -62,9 +62,20 @@ function transformMenuToNormal() {
 function openNav() {
 	DomElements.navBar.style.transform = 'translateX(0px)';
 	DomElements.navBar.style.width = '100%';
+
+	DomElements.hamburgerMenu.style.transition = '0s';
+	DomElements.hamburgerMenu.style.opacity = '0';
 	DomElements.hamburgerMenu.style.left = 'unset';
 	DomElements.hamburgerMenu.style.right = '10px';
-	transformMenuToClose();
+
+	setTimeout(() => {
+		DomElements.hamburgerMenu.style.transition = '0.3s';
+		DomElements.hamburgerMenu.style.opacity = '1';
+		setTimeout(() => {
+			transformMenuToClose();
+		}, 50);
+	}, 300);
+
 	ok = 1;
 }
 
@@ -72,9 +83,15 @@ function closeNav(check) {
 	if (check === 1) {
 		DomElements.navBar.style.transform = 'translateX(-320px)';
 		DomElements.navBar.style.width = '320px';
-		DomElements.hamburgerMenu.style.left = '10px';
-		DomElements.hamburgerMenu.style.right = 'unset';
-		transformMenuToNormal();
+		setTimeout(() => {
+			DomElements.hamburgerMenu.style.opacity = '0';
+		}, 50);
+		setTimeout(() => {
+			DomElements.hamburgerMenu.style.left = '10px';
+			DomElements.hamburgerMenu.style.opacity = '1';
+			DomElements.hamburgerMenu.style.right = 'unset';
+			transformMenuToNormal();
+		}, 300);
 		ok = 0;
 	}
 }
