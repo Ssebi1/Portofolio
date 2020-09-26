@@ -83,7 +83,7 @@ body {
 
 .navigation {
 	margin-left: -43px;
-	margin-top: 55px;
+	margin-top: 35px;
 }
 
 .navLink:hover {
@@ -101,6 +101,29 @@ body {
 	margin-top: 50px;
 }
 
+.social {
+	width: 100%;
+	height: auto;
+	padding-inline-start: 0px;
+	margin-top: 7px;
+}
+
+.social a {
+	text-decoration: none;
+	color: #777;
+	font-size: 18px;
+}
+
+.social li {
+	display: inline-block;
+	margin: 0 auto;
+	transition: color .15s ease-in-out;
+}
+
+.social li:hover {
+	color: rgb(82, 82, 82);
+}
+
 .languageSelect {
 	width: 100%;
 	height: auto;
@@ -113,8 +136,8 @@ body {
 }
 
 .language {
-	width: 30px;
-	height: 20px;
+	width: 22px;
+	height: 15px;
 	margin: 5px;
 	background-position: center;
 	background-size: cover;
