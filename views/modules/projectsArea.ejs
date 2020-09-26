@@ -10,7 +10,7 @@
         <div class="projectsFlexContainer">
             <% for(let i=0; i< projects.length; i++) { %>
             <% if(projects[i].type === 'web') { %>
-            <!-- href="/project?id=<%= projects[i].id %>&lng=<%= language %>"  -->
+            <!-- href="/project?id=<%= i %>&lng=<%= language %>"  -->
             <a class="project-tile project-tile-web" href="/project?id=<%= i %>&lng=<%= language %>">
                 <div class=" project-image" style="background-image: url('<%= projects[i].bannerImage %>');">
                 </div>
@@ -32,7 +32,7 @@
         <div class="projectsFlexContainer">
             <% for(let i=0; i< projects.length; i++) { %>
             <% if(projects[i].type === 'art') { %>
-            <!-- href="/project?id=<%= projects[i].id %>&lng=<%= language %>"  -->
+            <!-- href="/project?id=<%= i %>&lng=<%= language %>"  -->
             <a class="project-tile project-tile-art" href="/project?id=<%= i %>&lng=<%= language %>">
                 <div class=" project-image" style="background-image: url('<%= projects[i].bannerImage %>');">
                 </div>

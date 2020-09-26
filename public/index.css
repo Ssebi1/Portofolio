@@ -35,8 +35,8 @@ body {
 	overflow: auto;
 	text-align: center;
 	justify-content: center;
-	transition: transform .3s ease-in-out;
 	transform: translateX(0px);
+	transition: .3s ease-in-out;
 }
 
 .rightside {
@@ -53,7 +53,7 @@ body {
 	width: 160px;
 	height: 160px;
 	border-radius: 100%;
-	margin-top: 60px;
+	margin-top: 40px;
 }
 
 .name {

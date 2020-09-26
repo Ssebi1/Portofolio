@@ -36,7 +36,7 @@ var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 		showCategory(0);
 	}
 
-	for (i = 1; i <= 2; i++) {
+	for (i = 0; i <= 1; i++) {
 		if (parseInt(localStorage.getItem(`viewMoreCategory-${i}`))) {
 			viewMore(i === 0 ? 'web' : 'art');
 		}
@@ -129,7 +129,6 @@ function toggleProjects(el) {
 function viewMore(category) {
 	let tiles = document.querySelectorAll(`.project-tile-${category}`);
 	let id = category === 'web' ? 0 : 1;
-	// if (localStorage.getItem(`viewMoreCategory-${id}`) == 0) hideProjects(tiles);
 
 	let markup = DomElements.viewMoreButton[id].innerHTML;
 	if (language === 'en') {
@@ -147,10 +146,12 @@ function viewMore(category) {
 	else if (language === 'ro') {
 		if (markup === 'VEZI MAI MULT <i class="fa fa-chevron-down" aria-hidden="true"></i>') {
 			markup = 'VEZI MAI PUȚIN <i class="fa fa-chevron-up" aria-hidden="true"></i>';
+			toggleProjects(tiles);
 			localStorage.setItem(`viewMoreCategory-${id}`, 1);
 		}
 		else {
 			markup = 'VEZI MAI MULT <i class="fa fa-chevron-down" aria-hidden="true"></i>';
+			toggleProjects(tiles);
 			localStorage.setItem(`viewMoreCategory-${id}`, 0);
 		}
 	}
@@ -186,7 +187,6 @@ DomElements.viewMoreButton[0].addEventListener('click', function() {
 });
 
 DomElements.viewMoreButton[1].addEventListener('click', function() {
-	localStorage.setItem('viewMoreCategory-1', 1);
 	viewMore('art');
 	scrollToDiv(DomElements.projectsDiv);
 });
