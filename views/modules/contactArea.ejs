@@ -22,9 +22,19 @@
         </div>
         <div class="column2">
             <form action="/message?lng=<%= language %>" method="POST">
-                <input type="email" name="email" placeholder="<%= placeholder[0] %>" required>
-                <input type="text" name="subject" placeholder="<%= placeholder[1] %>" required>
-                <textarea name="message" required placeholder="<%= placeholder[2] %>"></textarea>
+                <div class="inputBox">
+                    <input class="contactInput" type="email" name="email" placeholder="<%= placeholder[0] %>" required>
+                    <div class="inputUnderline"></div>
+                </div>
+                <div class="inputBox">
+                    <input class="contactInput" type="text" name="subject" placeholder="<%= placeholder[1] %>" required>
+                    <div class="inputUnderline"></div>
+                </div>
+                <div class="inputBox">
+                    <textarea class="contactInput" name="message" required
+                        placeholder="<%= placeholder[2] %>"></textarea>
+                    <div class="inputUnderline"></div>
+                </div>
                 <button type="submit"><%= submitButton %></button>
             </form>
         </div>

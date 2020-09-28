@@ -1,9 +1,4 @@
-input,
-textarea,
-button,
-select,
-a,
-div {
+input, textarea, button, select, a, div {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -442,8 +437,7 @@ body {
 	}
 }
 
-.art,
-.web {
+.art, .web {
 	display: none;
 }
 
@@ -519,16 +513,32 @@ body {
 	position: relative;
 }
 
+.inputBox {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
 .column2 input {
-	max-width: 100%;
 	width: 100%;
 	outline: none;
 	border: none;
 	background-color: #f2f3f7;
-	margin-bottom: 20px;
 	padding: 15px 10px;
 	font-size: 16px;
-	border-radius: 3px;
+}
+
+.inputUnderline {
+	width: 100%;
+	height: 1px;
+	background-color: #2d98f0;
+	transition: transform .3s ease-in-out;
+	transform: scaleX(0);
+}
+
+.contactInput:focus+.inputUnderline {
+	transform: scaleX(1);
 }
 
 .column2 textarea {
@@ -536,7 +546,6 @@ body {
 	outline: none;
 	border: none;
 	background-color: #f2f3f7;
-	border-radius: 3px;
 	height: 80px;
 	resize: none;
 	overflow: auto;
@@ -552,7 +561,7 @@ body {
 	background-color: #2d98f0;
 	color: white;
 	border-radius: 3px;
-	margin-top: 10px;
+	margin-top: -10px;
 	cursor: pointer;
 	transition: .15s ease-in-out background;
 }
@@ -578,8 +587,7 @@ body {
 	.contactArea {
 		flex-wrap: wrap;
 	}
-	.column1,
-	.column2 {
+	.column1, .column2 {
 		width: 100%;
 	}
 }
@@ -588,8 +596,7 @@ body {
 	.contactArea {
 		flex-wrap: wrap;
 	}
-	.column1,
-	.column2 {
+	.column1, .column2 {
 		width: 100%;
 	}
 }
