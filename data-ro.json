@@ -2,23 +2,47 @@
 	{
 		"type": "web",
 		"id": "0",
-		"title": "Daily Play 1",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/cover_image.jpg",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Bookify",
+		"categories": [
+			"Web",
+			"Api",
+			"Html",
+			"Css",
+			"Javascript",
+			"Nodejs",
+			"Express",
+			"SQL"
+		],
+		"bannerImage": "./Images/Bookify5.jpg",
+		"images": [
+			"./Images/Bookify1.jpg",
+			"./Images/Bookify4.jpg",
+			"./Images/Bookify2.jpg",
+			"./Images/Bookify3.jpg"
+		],
+		"smallDescription": "Bookify este un website folosit pentru gestionarea cartilor terminate, neterminate si neincepute si pentru stocarea notitelor pentru fiecare dintre acestea",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Bookify-project",
+		"websiteLink": "https://bookify-read.herokuapp.com/"
 	},
 	{
 		"type": "web",
 		"id": "1",
-		"title": "Daily Play 2",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
+		"title": "Daily Play",
+		"categories": [
+			"Web",
+			"Game",
+			"Html",
+			"Css",
+			"Javascript"
+		],
 		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"images": [
+			"./Images/DailyPlay1.jpg",
+			"./Images/DailyPlay2.jpg",
+			"./Images/DailyPlay3.jpg"
+		],
+		"smallDescription": "Website de distractie ce contine doua jocuri: quick writter si number memory.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
 		"githubLink": "https://github.com/Ssebi1/DailyPlay",
 		"websiteLink": "https://dailyplay.herokuapp.com/"
@@ -26,73 +50,215 @@
 	{
 		"type": "web",
 		"id": "2",
-		"title": "Daily Play 3",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Pollution",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/Pollution3.jpg",
+		"images": [
+			"./Images/Pollution1.jpg",
+			"./Images/Pollution2.jpg"
+		],
+		"smallDescription": "Website ce prezinta problema poluarii in Romania si modalitati prin care poate fi oprita.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Pollution",
+		"websiteLink": "https://stop-pollution.herokuapp.com/"
 	},
 	{
 		"type": "web",
 		"id": "3",
-		"title": "Daily Play 4",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Movies Website",
+		"categories": [
+			"Web",
+			"Api",
+			"Html",
+			"Css",
+			"Javascript",
+			"Nodejs"
+		],
+		"bannerImage": "./Images/Movies1.jpg",
+		"images": [
+			"./Images/Movies2.jpg",
+			"./Images/Movies3.jpg",
+			"./Images/Movies4.jpg"
+		],
+		"smallDescription": "Website de filme si seriale ce cuprinde detalii legate de un anumit titlu, titluri similare si posibilitatea de a cauta un titlu.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Movies-Website-using-API",
+		"websiteLink": " https://top-stream.herokuapp.com/"
 	},
 	{
-		"type": "art",
+		"type": "web",
 		"id": "4",
-		"title": "Design 1",
-		"categories": [ "Art", "Design", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Blog CMS",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"PHP",
+			"Bootstrap",
+			"MySql",
+			"CRUD"
+		],
+		"bannerImage": "./Images/CMS1.jpg",
+		"images": [
+			"./Images/CMS1.jpg",
+			"./Images/CMS2.jpg",
+			"./Images/CMS3.jpg",
+			"./Images/CMS4.jpg"
+		],
+		"smallDescription": "Blog CMS cu posibilitatea de a adauga, sterge, modifica categorii, postari, utilizatori si comentarii.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Cms-Blog-with-CRUD-Admin-Page",
+		"websiteLink": "none"
 	},
 	{
-		"type": "art",
+		"type": "web",
 		"id": "5",
-		"title": "Design 2",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Joc de Spanzuratoarea",
+		"categories": [
+			"Web",
+			"Game",
+			"Html",
+			"Css",
+			"Javascript",
+			"API"
+		],
+		"bannerImage": "./Images/Hangman2.jpg",
+		"images": [
+			"./Images/Hangman1.jpg",
+			"./Images/Hangman2.jpg"
+		],
+		"smallDescription": "Joc clasic de spanzuratoarea ce preia cuvintele dintr-un API cu dictionarul englez.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Hangman-Game",
+		"websiteLink": "https://hangman-play.herokuapp.com"
 	},
 	{
-		"type": "art",
+		"type": "web",
 		"id": "6",
-		"title": "Design 3",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Joc de matematica",
+		"categories": [
+			"Web",
+			"Game",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/MathGame2.jpg",
+		"images": [
+			"./Images/MathGame2.jpg",
+			"./Images/MathGame1.jpg"
+		],
+		"smallDescription": "Joc de matematica cu optiunea de a selecta dificultatea si timpul de raspuns.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/math-game",
+		"websiteLink": "https://math-smart-game.herokuapp.com/"
+	},
+	{
+		"type": "web",
+		"id": "7",
+		"title": "Site de prezentare a unui business",
+		"categories": [
+			"Web",
+			"Business",
+			"Html",
+			"Css",
+			"Javascript",
+			"Single Page"
+		],
+		"bannerImage": "./Images/Business1.jpg",
+		"images": [
+			"./Images/Business1.jpg",
+			"./Images/Business2.jpg",
+			"./Images/Business3.jpg"
+		],
+		"smallDescription": "Site de prezentare ce cuprinde informatii, galerie si detalii de contact ale unui business.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "https://github.com/Ssebi1/Business-Presentation-Website",
+		"websiteLink": "none"
 	},
 	{
 		"type": "art",
-		"id": "7",
-		"title": "Design 4",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"id": "8",
+		"title": "Pliant de prezentare",
+		"categories": [
+			"Art",
+			"Design",
+			"Photoshop",
+			"Brochure"
+		],
+		"bannerImage": "./Images/brochure1.jpg",
+		"images": [
+			"./Images/brochure1.jpg",
+			"./Images/brochure2.jpg"
+		],
+		"smallDescription": "Pliant ce prezinta detalii despre un business.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
+	},
+	{
+		"type": "art",
+		"id": "9",
+		"title": "Pliant medical",
+		"categories": [
+			"Art",
+			"Design",
+			"Photoshop",
+			"Brochure"
+		],
+		"bannerImage": "./Images/hepatitaFata.jpg",
+		"images": [
+			"./Images/hepatitaFata.jpg",
+			"./Images/hepatitaSpate.jpg"
+		],
+		"smallDescription": "Brosura medicala ce prezinta detalii despre hepatita.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
+	},
+	{
+		"type": "art",
+		"id": "10",
+		"title": "Carte de vizita",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/CardVisit.jpg",
+		"images": [
+			"./Images/CardVisit.jpg",
+			"./Images/CardVisitB.jpg"
+		],
+		"smallDescription": "Carte de vizita pentru un site de tehnologie.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
+	},
+	{
+		"type": "art",
+		"id": "11",
+		"title": "Banner pentru Instagram",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/Instagram.jpg",
+		"images": [
+			"./Images/Instagram.jpg",
+			"./Images/Instagram3.jpg"
+		],
+		"smallDescription": "Banner folosit pentru profilul de instagram.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
 	}
 ]

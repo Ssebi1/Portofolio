@@ -2,23 +2,47 @@
 	{
 		"type": "web",
 		"id": "0",
-		"title": "Daily Play 1",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/cover_image.jpg",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Bookify",
+		"categories": [
+			"Web",
+			"Api",
+			"Html",
+			"Css",
+			"Javascript",
+			"Nodejs",
+			"Express",
+			"SQL"
+		],
+		"bannerImage": "./Images/Bookify5.jpg",
+		"images": [
+			"./Images/Bookify1.jpg",
+			"./Images/Bookify4.jpg",
+			"./Images/Bookify2.jpg",
+			"./Images/Bookify3.jpg"
+		],
+		"smallDescription": "Bookify is a website used for managing finished, unfinished and not started books and to store notes on each.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Bookify-project",
+		"websiteLink": "https://bookify-read.herokuapp.com/"
 	},
 	{
 		"type": "web",
 		"id": "1",
-		"title": "Daily Play 2",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
+		"title": "Daily Play",
+		"categories": [
+			"Web",
+			"Game",
+			"Html",
+			"Css",
+			"Javascript"
+		],
 		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"images": [
+			"./Images/DailyPlay1.jpg",
+			"./Images/DailyPlay2.jpg",
+			"./Images/DailyPlay3.jpg"
+		],
+		"smallDescription": "Arcade website with two challanging games: quick writter and number memory.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
 		"githubLink": "https://github.com/Ssebi1/DailyPlay",
 		"websiteLink": "https://dailyplay.herokuapp.com/"
@@ -26,73 +50,215 @@
 	{
 		"type": "web",
 		"id": "2",
-		"title": "Daily Play 3",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Pollution",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/Pollution3.jpg",
+		"images": [
+			"./Images/Pollution1.jpg",
+			"./Images/Pollution2.jpg"
+		],
+		"smallDescription": "Single page website exposing pollution problems in Romania and ways to stop it.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Pollution",
+		"websiteLink": "https://stop-pollution.herokuapp.com/"
 	},
 	{
 		"type": "web",
 		"id": "3",
-		"title": "Daily Play 4",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Movies Website",
+		"categories": [
+			"Web",
+			"Api",
+			"Html",
+			"Css",
+			"Javascript",
+			"Nodejs"
+		],
+		"bannerImage": "./Images/Movies1.jpg",
+		"images": [
+			"./Images/Movies2.jpg",
+			"./Images/Movies3.jpg",
+			"./Images/Movies4.jpg"
+		],
+		"smallDescription": "Movies and Tv Series website with title details, similar titles and search functionality.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Movies-Website-using-API",
+		"websiteLink": " https://top-stream.herokuapp.com/"
 	},
 	{
-		"type": "art",
+		"type": "web",
 		"id": "4",
-		"title": "Design 1",
-		"categories": [ "Art", "Design", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "CMS Blog",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"PHP",
+			"Bootstrap",
+			"MySql",
+			"CRUD"
+		],
+		"bannerImage": "./Images/CMS1.jpg",
+		"images": [
+			"./Images/CMS1.jpg",
+			"./Images/CMS2.jpg",
+			"./Images/CMS3.jpg",
+			"./Images/CMS4.jpg"
+		],
+		"smallDescription": "CMS blog with adding, deleting, modifying categories, posts, users, comments functionality.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Cms-Blog-with-CRUD-Admin-Page",
+		"websiteLink": "none"
 	},
 	{
-		"type": "art",
+		"type": "web",
 		"id": "5",
-		"title": "Design 2",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Hangman Game",
+		"categories": [
+			"Web",
+			"Game",
+			"Html",
+			"Css",
+			"Javascript",
+			"API"
+		],
+		"bannerImage": "./Images/Hangman2.jpg",
+		"images": [
+			"./Images/Hangman1.jpg",
+			"./Images/Hangman2.jpg"
+		],
+		"smallDescription": "Classical Hangman game with words from English Dictionary API.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/Hangman-Game",
+		"websiteLink": "https://hangman-play.herokuapp.com"
 	},
 	{
-		"type": "art",
+		"type": "web",
 		"id": "6",
-		"title": "Design 3",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"title": "Math Game",
+		"categories": [
+			"Web",
+			"Game",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/MathGame2.jpg",
+		"images": [
+			"./Images/MathGame2.jpg",
+			"./Images/MathGame1.jpg"
+		],
+		"smallDescription": "Math game with options for selecting difficulty and timer.",
 		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"githubLink": "https://github.com/Ssebi1/math-game",
+		"websiteLink": "https://math-smart-game.herokuapp.com/"
+	},
+	{
+		"type": "web",
+		"id": "7",
+		"title": "Business Presentation Website",
+		"categories": [
+			"Web",
+			"Business",
+			"Html",
+			"Css",
+			"Javascript",
+			"Single Page"
+		],
+		"bannerImage": "./Images/Business1.jpg",
+		"images": [
+			"./Images/Business1.jpg",
+			"./Images/Business2.jpg",
+			"./Images/Business3.jpg"
+		],
+		"smallDescription": "Single page website for presenting business details, galery, contact info.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "https://github.com/Ssebi1/Business-Presentation-Website",
+		"websiteLink": "none"
 	},
 	{
 		"type": "art",
-		"id": "7",
-		"title": "Design 4",
-		"categories": [ "Web", "Api", "Html", "Css", "Javascript" ],
-		"bannerImage": "./Images/banner.png",
-		"images": [ "./Images/banner.png", "./Images/cover_image.jpg" ],
-		"smallDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
-		"githubLink": "https://github.com/Ssebi1/DailyPlay",
-		"websiteLink": "https://dailyplay.herokuapp.com/"
+		"id": "8",
+		"title": "Business Brochure",
+		"categories": [
+			"Art",
+			"Design",
+			"Photoshop",
+			"Brochure"
+		],
+		"bannerImage": "./Images/brochure1.jpg",
+		"images": [
+			"./Images/brochure1.jpg",
+			"./Images/brochure2.jpg"
+		],
+		"smallDescription": "Business brochure containing info and contact details.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
+	},
+	{
+		"type": "art",
+		"id": "9",
+		"title": "Medical Brochure",
+		"categories": [
+			"Art",
+			"Design",
+			"Photoshop",
+			"Brochure"
+		],
+		"bannerImage": "./Images/hepatitaFata.jpg",
+		"images": [
+			"./Images/hepatitaFata.jpg",
+			"./Images/hepatitaSpate.jpg"
+		],
+		"smallDescription": "Medical brochure presenting concerns about a widely spread disease.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
+	},
+	{
+		"type": "art",
+		"id": "10",
+		"title": "Visit Card",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/CardVisit.jpg",
+		"images": [
+			"./Images/CardVisit.jpg",
+			"./Images/CardVisitB.jpg"
+		],
+		"smallDescription": "Card visit for a tech website.",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
+	},
+	{
+		"type": "art",
+		"id": "11",
+		"title": "Instagram Banner",
+		"categories": [
+			"Web",
+			"Html",
+			"Css",
+			"Javascript"
+		],
+		"bannerImage": "./Images/Instagram.jpg",
+		"images": [
+			"./Images/Instagram.jpg",
+			"./Images/Instagram3.jpg"
+		],
+		"smallDescription": "Instagram banner for tech website",
+		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"githubLink": "none",
+		"websiteLink": "none"
 	}
 ]

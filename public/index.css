@@ -402,9 +402,8 @@ body {
 .project-content {
 	background-color: #f2f3f7;
 	height: auto;
-	min-height: 100px;
 	max-width: 100%;
-	padding: 10px;
+	padding: 10px 10px 0 10px;
 }
 
 .project-title {
@@ -418,6 +417,7 @@ body {
 
 .project-description {
 	color: #777;
+	padding-bottom: 15px;
 }
 
 .projectArea a {
