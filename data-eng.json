@@ -13,7 +13,7 @@
 			"Express",
 			"SQL"
 		],
-		"bannerImage": "./Images/Bookify5.jpg",
+		"bannerImage": "Images/Bookify5.jpg",
 		"images": [
 			"./Images/Bookify1.jpg",
 			"./Images/Bookify4.jpg",
@@ -36,7 +36,7 @@
 			"Css",
 			"Javascript"
 		],
-		"bannerImage": "./Images/banner.png",
+		"bannerImage": "Images/banner.png",
 		"images": [
 			"./Images/DailyPlay1.jpg",
 			"./Images/DailyPlay2.jpg",
@@ -57,7 +57,7 @@
 			"Css",
 			"Javascript"
 		],
-		"bannerImage": "./Images/Pollution3.jpg",
+		"bannerImage": "Images/Pollution3.jpg",
 		"images": [
 			"./Images/Pollution1.jpg",
 			"./Images/Pollution2.jpg"
@@ -79,7 +79,7 @@
 			"Javascript",
 			"Nodejs"
 		],
-		"bannerImage": "./Images/Movies1.jpg",
+		"bannerImage": "Images/Movies1.jpg",
 		"images": [
 			"./Images/Movies2.jpg",
 			"./Images/Movies3.jpg",
@@ -103,7 +103,7 @@
 			"MySql",
 			"CRUD"
 		],
-		"bannerImage": "./Images/CMS1.jpg",
+		"bannerImage": "Images/CMS1.jpg",
 		"images": [
 			"./Images/CMS1.jpg",
 			"./Images/CMS2.jpg",
@@ -127,7 +127,7 @@
 			"Javascript",
 			"API"
 		],
-		"bannerImage": "./Images/Hangman2.jpg",
+		"bannerImage": "Images/Hangman2.jpg",
 		"images": [
 			"./Images/Hangman1.jpg",
 			"./Images/Hangman2.jpg"
@@ -148,7 +148,7 @@
 			"Css",
 			"Javascript"
 		],
-		"bannerImage": "./Images/MathGame2.jpg",
+		"bannerImage": "Images/MathGame2.jpg",
 		"images": [
 			"./Images/MathGame2.jpg",
 			"./Images/MathGame1.jpg"
@@ -170,7 +170,7 @@
 			"Javascript",
 			"Single Page"
 		],
-		"bannerImage": "./Images/Business1.jpg",
+		"bannerImage": "Images/Business1.jpg",
 		"images": [
 			"./Images/Business1.jpg",
 			"./Images/Business2.jpg",
@@ -191,7 +191,7 @@
 			"Photoshop",
 			"Brochure"
 		],
-		"bannerImage": "./Images/brochure1.jpg",
+		"bannerImage": "Images/brochure1.jpg",
 		"images": [
 			"./Images/brochure1.jpg",
 			"./Images/brochure2.jpg"
@@ -211,7 +211,7 @@
 			"Photoshop",
 			"Brochure"
 		],
-		"bannerImage": "./Images/hepatitaFata.jpg",
+		"bannerImage": "Images/hepatitaFata.jpg",
 		"images": [
 			"./Images/hepatitaFata.jpg",
 			"./Images/hepatitaSpate.jpg"
@@ -231,7 +231,7 @@
 			"Css",
 			"Javascript"
 		],
-		"bannerImage": "./Images/CardVisit.jpg",
+		"bannerImage": "Images/CardVisit.jpg",
 		"images": [
 			"./Images/CardVisit.jpg",
 			"./Images/CardVisitB.jpg"
@@ -251,7 +251,7 @@
 			"Css",
 			"Javascript"
 		],
-		"bannerImage": "./Images/Instagram.jpg",
+		"bannerImage": "Images/Instagram.jpg",
 		"images": [
 			"./Images/Instagram.jpg",
 			"./Images/Instagram3.jpg"
