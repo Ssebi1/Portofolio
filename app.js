@@ -77,7 +77,7 @@ var transporter = nodemailer.createTransport({
   host: process.env.host,
   port: 587,
   secure: false,
-  requireTLS: true,
+  requireTLS: false,
   auth: {
     user: process.env.User,
     pass: process.env.Password,
