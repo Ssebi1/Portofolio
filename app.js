@@ -5,11 +5,11 @@ const port = process.env.PORT || 8080;
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const fs = require('fs');
-const forceSsl = require('force-ssl-heroku');
+// const forceSsl = require('force-ssl-heroku');
 require('dotenv').config();
 
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(forceSsl);
+// app.use(forceSsl);
 
 app.set('view engine', 'ejs');
 
