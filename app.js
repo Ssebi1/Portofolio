@@ -75,7 +75,8 @@ app.get('/project', (req, res) => {
 
 var transporter = nodemailer.createTransport({
   host: process.env.HOST,
-  port: 587,
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.USER,
     pass: process.env.PASSWORD,
