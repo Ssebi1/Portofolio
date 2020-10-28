@@ -74,11 +74,11 @@ app.get('/project', (req, res) => {
 });
 
 var transporter = nodemailer.createTransport({
-  host: process.env.Host,
+  host: process.env.HOST,
   port: 587,
   auth: {
-    user: process.env.User,
-    pass: process.env.Password,
+    user: process.env.USER,
+    pass: process.env.PASSWORD,
   },
 });
 
