@@ -27,7 +27,7 @@ app.get('/test2', (req, res) => {
 });
 
 app.get('/test3', (req, res) => {
-  res.send(process.env.USER);
+  res.send(process.env.PASSWORD);
 });
 
 //Reading data from data.json
