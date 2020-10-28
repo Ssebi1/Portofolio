@@ -18,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port);
 
+console.log(process.env.USER);
+
 //Reading data from data.json
 
 //Routes
