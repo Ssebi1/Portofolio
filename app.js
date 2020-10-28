@@ -18,18 +18,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port);
 
-app.get('/test1', (req, res) => {
-  res.send(process.env.HOST);
-});
-
-app.get('/test2', (req, res) => {
-  res.send(process.env.USER);
-});
-
-app.get('/test3', (req, res) => {
-  res.send(process.env.PASSWORD);
-});
-
 //Reading data from data.json
 
 //Routes
@@ -92,6 +80,10 @@ var transporter = nodemailer.createTransport({
   auth: {
     user: process.env.USER,
     pass: process.env.PASSWORD,
+  },
+  tls: {
+    // do not fail on invalid certs
+    rejectUnauthorized: false,
   },
 });
 
