@@ -87,7 +87,7 @@ app.post('/message', (req, res) => {
   const { email, subject, message } = req.body;
   const language = req.query.lng;
   var mailOptions = {
-    from: email,
+    from: 'sebidancau1234@gmail.com',
     to: 'sebidancau@yahoo.com',
     subject: subject,
     html: `From: ${email} <br>${message}`,
