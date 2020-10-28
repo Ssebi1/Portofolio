@@ -81,10 +81,6 @@ var transporter = nodemailer.createTransport({
     user: process.env.USER,
     pass: process.env.PASSWORD,
   },
-  tls: {
-    // do not fail on invalid certs
-    rejectUnauthorized: false,
-  },
 });
 
 app.post('/message', (req, res) => {
