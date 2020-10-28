@@ -18,7 +18,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port);
 
-console.log(process.env.USER);
+app.get('/test', (req, res) => {
+  res.send(process.env.USER);
+});
 
 //Reading data from data.json
 
