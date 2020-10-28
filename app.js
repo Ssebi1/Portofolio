@@ -18,7 +18,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port);
 
-app.get('/test', (req, res) => {
+app.get('/test1', (req, res) => {
+  res.send(process.env.HOST);
+});
+
+app.get('/test2', (req, res) => {
+  res.send(process.env.USER);
+});
+
+app.get('/test3', (req, res) => {
   res.send(process.env.USER);
 });
 
