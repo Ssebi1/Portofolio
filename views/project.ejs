@@ -28,25 +28,34 @@
                 <% } %>
             </div>
         </div>
+
+        <% if(project.fullDescription.length > 100) { %>
         <div class="description">
             <div class="smallTitle">Description</div>
             <div class="bigTitle">About project</div>
             <div class="text"><%- project.fullDescription %></div>
         </div>
+        <% } %>
 
+        <% if(project.githubLink != 'none' || project.websiteLink!='none' ) { %>
         <div class="links">
             <div class="smallTitle">Links</div>
             <div class="bigTitle">View source code and project</div>
             <div class="flexContainer">
+                <% if(project.githubLink != 'none') { %>
                 <a href="<%= project.githubLink %>" target="_blank"><img
                         src="https://github-readme-stats.vercel.app/api/pin/?username=ssebi1&repo=DailyPlay&show_owner=true"
                         alt="">
                 </a>
+                <% } %>
 
+                <% if(project.websiteLink != 'none') { %>
                 <div class="website">Get to website for a live demo.</div>
+                <% } %>
 
             </div>
         </div>
+        <% } %>
 
         <input type="hidden" class="imagesArray" value="<%= project.images %>">
         <input type="hidden" class="descriptionText" value="<%= project.description %>">

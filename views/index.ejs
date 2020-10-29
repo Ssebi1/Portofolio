@@ -29,7 +29,7 @@
 
 			<!-- Navigation -->
 			<%- include('modules/navigation',{
-					navigationItem: ['Home','About','Education','Skills','Projects','Contact']
+					navigationItem: ['Home','About','Education','Training','Skills','Projects','Contact']
 			}) %>
 
 			<!-- Footer -->
@@ -57,6 +57,7 @@
 				buttonText: 'DOWNLOAD CV'
 			}) %>
 
+
 			<!-- About area -->
 			<%- include('modules/aboutArea',{
 				<!-- Small title goes here -->
@@ -69,6 +70,7 @@
 				aboutContent: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora velit ea ipsam nostrum eveniet eius incidunt aliquam, laudantium beatae, porro totam. Eos doloremque sit eum perspiciatis aperiam dicta, at error. Iure iusto laboriosam veniam autem doloribus illo numquam omnis asperiores reiciendis tempore exercitationem eligendi explicabo quaerat repudiandae quasi, libero odio voluptas doloremque porro delectus modi at molestiae nostrum!<br><br> Ex ratione ipsum quia? Tenetur repellat autem quasi nam voluptatum fuga? Pariatur, itaque minima? Reiciendis, assumenda. Reiciendis, praesentium itaque debitis aspernatur natus dolores eum vitae, eius facere illo consectetur repellendus similique neque?"
 			}) %>
 
+
 			<!-- Education area -->
 			<%- include('modules/educationArea',{
 				<!-- Small title goes here -->
@@ -79,12 +81,31 @@
 
 				<!-- Education tiles goes here -->
 				education: [
-				'2016-2020</span><br> Highschool "Mircea Cel Batran", Rm. Valcea',
 				'2020-present</span><br> University of Bucharest, Computer Science',
-				'2018</span><br> IC3 Digital Literacy Certification',
-				'2020</span><br> Php fundamentals by Edwin Diaz and Complete Javascript by Jonas Schmedtmann courses finished'
+				'2016-2020</span><br> Highschool "Mircea Cel Batran", Rm. Valcea<br>Mathematics and computer science',
 				]
 			}) %>
+
+
+			<!-- Training area -->
+			<%- include('modules/trainingArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Education history',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Training/Experiences',
+
+				<!-- Education tiles goes here -->
+				training: [
+				'IC3 Digital Literacy Certification',
+				'Erasmus exchange experience in 2016',
+				'PHP Fundamentals course by Edwin Diaz',
+				'The Complete Javascript course by Jonas Schmedtmann',
+				'React course by Maximilian Schwarzmüller',
+				'Docker Workshop by JSLeague',
+				]
+			}) %>
+
 
 			<!-- Skills area -->
 			<%- include('modules/skillsArea',{

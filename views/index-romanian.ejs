@@ -31,7 +31,7 @@
 
 			<!-- Navigation -->
 			<%- include('modules/navigation',{
-					navigationItem: ['Acasă','Despre','Educație','Cunoștințe','Proiecte','Contact']
+					navigationItem: ['Acasă','Despre','Educație','Pregătire','Cunoștințe','Proiecte','Contact']
 			}) %>
 
 			<!-- Footer -->
@@ -83,13 +83,30 @@
 
 				<!-- Education tiles goes here -->
 				education: [
-				'2016-2020</span><br> Colegiul "Mircea Cel Bătrân", Rm. Vâlcea',
 				'2020-present</span><br> Universitatea București, Facultatea de Matematică și Informatică',
-				'2018</span><br> Certificare IC3 Digital Literacy',
-				'2020</span><br> Cursurile Php fundamentals de Edwin Diaz si Complete Javascript de Jonas Schmedtmann completate'
+				'2016-2020</span><br> Colegiul "Mircea Cel Bătrân", Rm. Vâlcea<br>Matematică și Informatică',
 				]
 			}) %>
 
+
+			<!-- Training area -->
+			<%- include('modules/trainingArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Education history',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Training/Experiences',
+
+				<!-- Education tiles goes here -->
+				training: [
+				'Certificare IC3 Digital Literacy',
+				'Experiență Erasmus exchange în 2016',
+				'Cursul PHP Fundamentals de Edwin Diaz',
+				'Cursul The Complete Javascript de Jonas Schmedtmann',
+				'Curs React de Maximilian Schwarzmüller',
+				'Docker Workshop de JSLeague',
+				]
+			}) %>
 
 
 			<!-- Skills area -->

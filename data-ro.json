@@ -21,7 +21,7 @@
 			"./Images/Bookify3.jpg"
 		],
 		"smallDescription": "Bookify este un website folosit pentru gestionarea cartilor terminate, neterminate si neincepute si pentru stocarea notitelor pentru fiecare dintre acestea",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Bookify-project",
 		"websiteLink": "https://bookify-read.herokuapp.com/"
 	},
@@ -43,7 +43,7 @@
 			"./Images/DailyPlay3.jpg"
 		],
 		"smallDescription": "Website de distractie ce contine doua jocuri: quick writter si number memory.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/DailyPlay",
 		"websiteLink": "https://dailyplay.herokuapp.com/"
 	},
@@ -63,7 +63,7 @@
 			"./Images/Pollution2.jpg"
 		],
 		"smallDescription": "Website ce prezinta problema poluarii in Romania si modalitati prin care poate fi oprita.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Pollution",
 		"websiteLink": "https://stop-pollution.herokuapp.com/"
 	},
@@ -86,7 +86,7 @@
 			"./Images/Movies4.jpg"
 		],
 		"smallDescription": "Website de filme si seriale ce cuprinde detalii legate de un anumit titlu, titluri similare si posibilitatea de a cauta un titlu.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Movies-Website-using-API",
 		"websiteLink": " https://top-stream.herokuapp.com/"
 	},
@@ -111,7 +111,7 @@
 			"./Images/CMS4.jpg"
 		],
 		"smallDescription": "Blog CMS cu posibilitatea de a adauga, sterge, modifica categorii, postari, utilizatori si comentarii.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Cms-Blog-with-CRUD-Admin-Page",
 		"websiteLink": "none"
 	},
@@ -133,7 +133,7 @@
 			"./Images/Hangman2.jpg"
 		],
 		"smallDescription": "Joc clasic de spanzuratoarea ce preia cuvintele dintr-un API cu dictionarul englez.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Hangman-Game",
 		"websiteLink": "https://hangman-play.herokuapp.com"
 	},
@@ -154,7 +154,7 @@
 			"./Images/MathGame1.jpg"
 		],
 		"smallDescription": "Joc de matematica cu optiunea de a selecta dificultatea si timpul de raspuns.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/math-game",
 		"websiteLink": "https://math-smart-game.herokuapp.com/"
 	},
@@ -177,7 +177,7 @@
 			"./Images/Business3.jpg"
 		],
 		"smallDescription": "Site de prezentare ce cuprinde informatii, galerie si detalii de contact ale unui business.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Business-Presentation-Website",
 		"websiteLink": "none"
 	},
@@ -197,7 +197,7 @@
 			"./Images/brochure2.jpg"
 		],
 		"smallDescription": "Pliant ce prezinta detalii despre un business.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "none",
 		"websiteLink": "none"
 	},
@@ -217,7 +217,7 @@
 			"./Images/hepatitaSpate.jpg"
 		],
 		"smallDescription": "Brosura medicala ce prezinta detalii despre hepatita.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "none",
 		"websiteLink": "none"
 	},
@@ -237,7 +237,7 @@
 			"./Images/CardVisitB.jpg"
 		],
 		"smallDescription": "Carte de vizita pentru un site de tehnologie.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "none",
 		"websiteLink": "none"
 	},
@@ -257,7 +257,7 @@
 			"./Images/Instagram3.jpg"
 		],
 		"smallDescription": "Banner folosit pentru profilul de instagram.",
-		"fullDescription": "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur",
+		"fullDescription": "none",
 		"githubLink": "none",
 		"websiteLink": "none"
 	}

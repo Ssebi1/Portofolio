@@ -1,0 +1,35 @@
+<div class="training">
+    <div class="education-smallTitle smallTitle"><%= smallTitle %></div>
+    <div class="education-bigTitle bigTitle"><%= bigTitle %></div>
+
+    <div class="trainingFlex">
+        <% for(let i=0; i < training.length; i++) { %>
+        <div class="training-tile">
+            <div class="colorBox"></div>
+            <div class="tileContent">
+                <div class="tileText">
+                    <%- training[i] %>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
+
+<script>
+    //Education tiles colirs
+    const trainingTile = document.querySelectorAll('.training-tile');
+    for (i = 0; i < trainingTile.length; i++) {
+        if (i % 2 == 0)
+            trainingTile[i].firstElementChild.style.backgroundColor = '#30a499';
+        else
+            trainingTile[i].firstElementChild.style.backgroundColor = '#f9bf40';
+    }
+    // trainingTile[0].firstElementChild.style.backgroundColor = '#f9bf40';
+    // trainingTile[1].firstElementChild.style.backgroundColor = '#30a499';
+    // trainingTile[2].firstElementChild.style.backgroundColor = '#f9bf40';
+    // trainingTile[3].firstElementChild.style.backgroundColor = '#30a499';
+    // trainingTile[4].firstElementChild.style.backgroundColor = '#f9bf40';
+    // trainingTile[5].firstElementChild.style.backgroundColor = '#30a499';
+
+</script>

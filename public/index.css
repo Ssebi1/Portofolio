@@ -36,10 +36,8 @@ body {
 	background-color: #f2f3f7;
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
-	overflow: auto;
 	text-align: center;
 	justify-content: center;
-	transform: translateX(0px);
 	transition: .3s ease-in-out;
 }
 
@@ -160,7 +158,7 @@ body {
 	background-image: url('./Images/romanian.png');
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 750px) {
 	.profile img {
 		margin-top: 10px;
 	}
@@ -175,13 +173,19 @@ body {
 	}
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 650px) {
 	.profile img {
 		width: 70px;
 		height: 70px;
 	}
 	.navigation ul li {
 		font-size: 15px;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	.profile img {
+		display: none;
 	}
 }
 
@@ -258,7 +262,7 @@ body {
 	padding-right: 5px;
 }
 
-.education {
+.education, .training {
 	max-width: 100%;
 	height: auto;
 	color: black;
@@ -266,7 +270,7 @@ body {
 	margin-top: 30px;
 }
 
-.education-tile {
+.education-tile{
 	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -276,6 +280,29 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-bottom: 20px;
+}
+
+.trainingFlex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.training-tile{
+	width: 48%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	height: auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 915px) {
+	.training-tile {
+		width: 100%;
+	}
 }
 
 .colorBox {
@@ -320,8 +347,8 @@ body {
 }
 
 .skillTitle {
-	font-size: 20px;
-	padding: 8px 0 0 7px;
+	font-size: 23px;
+	padding: 8px 0 0 8px;
 	color: #777;
 }
 
@@ -337,7 +364,7 @@ body {
 .skillImage {
 	height: 30px;
 	width: auto;
-	padding: 6px 10px 0px 10px;
+	padding: 6px 10px 6px 10px;
 }
 
 .projects {
