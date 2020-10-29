@@ -8,9 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
 </head>
 
 <body>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
 	<div class="main">
 
 		<!-- Hamburger icon -->
@@ -160,6 +164,15 @@
 		</div>
 	</div>
 	<input type="hidden" class="languageDetect" value="<%= language %>">
+	<script>
+		tippy('.skillImage', {
+			placement: 'bottom',
+			zIndex: 100,
+			animation: 'shift-toward',
+			theme: 'light-border',
+			touch: false
+		});
+	</script>
 	<script src="index.js"></script>
 </body>
 
