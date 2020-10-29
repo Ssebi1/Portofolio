@@ -24,7 +24,7 @@ app.listen(port);
 
 //Sitemap
 app.get('/sitemap.xml', (req, res) => {
-  res.sendFile('./sitemap.xml');
+  res.sendFile('sitemap.xml', { root: '.' });
 });
 
 app.get('/', (req, res) => {
