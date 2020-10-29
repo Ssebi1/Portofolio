@@ -12,7 +12,8 @@
             <% if(projects[i].type === 'web') { %>
             <!-- href="/project?id=<%= i %>&lng=<%= language %>"  -->
             <a class="project-tile project-tile-web" href="/project?id=<%= i %>&lng=<%= language %>">
-                <div class=" project-image" style="background-image: url('<%= projects[i].bannerImage %>');">
+                <div title="<%= projects[i].title %>" class=" project-image"
+                    style="background-image: url('<%= projects[i].bannerImage %>');">
                 </div>
                 <div class="project-content">
                     <div class="project-title"><%= projects[i].title %></div>
