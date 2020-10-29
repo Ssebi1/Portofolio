@@ -21,6 +21,12 @@ app.listen(port);
 //Reading data from data.json
 
 //Routes
+
+//Sitemap
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile('./sitemap.xml');
+});
+
 app.get('/', (req, res) => {
   const language = req.query.lng;
 
