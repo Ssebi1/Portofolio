@@ -6,12 +6,14 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 const fs = require('fs');
-// const forceSsl = require('force-ssl-heroku');
 require('dotenv').config();
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-// app.use(forceSsl);
+
+// Compression
+const compression = require('compression');
+app.use(compression());
 
 app.set('view engine', 'ejs');
 
@@ -20,15 +22,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port);
 
-//Reading data from data.json
-
-//Routes
-
 //Sitemap
 app.get('/sitemap.xml', (req, res) => {
   res.sendFile('sitemap.xml', { root: '.' });
 });
 
+//Routes
 app.get('/', (req, res) => {
   const language = req.query.lng;
 
