@@ -4,7 +4,7 @@ input, textarea, button, select, a, div {
 
 @font-face {
 	font-family: regularFont;
-	src: url(./font/OpenSans-Regular.ttf);
+	src: url(./font/Roboto-Regular.ttf);
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: regularFontFont;
+	font-family: regularFont;
 	line-height: auto;
 }
 
@@ -57,13 +57,14 @@ body {
 }
 
 .name {
-	font-size: 25px;
+	font-size: 26px;
+	font-weight: 550;
 	margin-top: 30px;
 	font-family: regularFont;
 }
 
 .subname {
-	font-size: 12px;
+	font-size: 14px;
 	color: #777;
 	margin-top: 8px;
 }
@@ -72,7 +73,7 @@ body {
 	list-style-type: none;
 	margin: 0 auto;
 	padding-bottom: 15px;
-	font-size: 17px;
+	font-size: 20px;
 }
 
 .navLink {
@@ -99,7 +100,7 @@ body {
 }
 
 .footer {
-	font-size: 12px;
+	font-size: 13px;
 	color: #777;
 	margin-top: 30px;
 }
@@ -210,7 +211,6 @@ body {
 }
 
 .banner-big-text {
-	font-family: regularFont;
 	font-size: 60px;
 }
 
@@ -223,16 +223,17 @@ body {
 	padding: 10px 20px;
 	margin-top: 10px;
 	font-size: 13px;
-	color: #777;
-	border: 1px solid #777;
+	color: #02b0e0;
+	border: 1px solid #02b0e0;
 	background-color: rgba(243, 243, 243, 0.829);
+	border-radius:5px;
 	cursor: pointer;
 	transition: 0.15s ease;
 }
 
 .banner-button:hover {
-	color: black;
-	border-color: black;
+	color: #0393bb;
+	border-color: #0393bb;
 }
 
 .about {
@@ -261,7 +262,7 @@ body {
 	padding-right: 5px;
 }
 
-.education, .training {
+.education, .training,.achivement {
 	max-width: 100%;
 	height: auto;
 	color: black;
@@ -269,7 +270,7 @@ body {
 	margin-top: 30px;
 }
 
-.education-tile{
+.education-tile,.achivement-tile{
 	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -311,6 +312,17 @@ body {
 	opacity: 0.8;
 }
 
+.colorBoxAchivement{
+	opacity:0.8;
+	color:yellow;
+	background:#ec5554;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:30px;
+	padding:0 20px;
+}
+
 .tileContent {
 	width: 100%;
 	background-color: rgba(241, 241, 241, 0.747);
@@ -321,10 +333,11 @@ body {
 	position: relative;
 	padding: 20px;
 	font-size: 17px;
+	color:#777;
 }
 
-.educationyear {
-	color: #777;
+.educationyear,.achivementyear {
+	color: #02b0e0;
 	font-size: 12px;
 }
 
@@ -412,7 +425,7 @@ body {
 .project-tile {
 	width: 100%;
 	max-width: 300px;
-	height: 300px;
+	max-height: 350px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	cursor: pointer;

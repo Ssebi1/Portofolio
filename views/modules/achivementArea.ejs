@@ -1,0 +1,24 @@
+<div class="achivement">
+    <div class="achivement-smallTitle smallTitle"><%= smallTitle %></div>
+    <div class="achivement-bigTitle bigTitle"><%= bigTitle %></div>
+
+    <% for(let i=0; i < achivement.length; i++) { %>
+    <div class="achivement-tile">
+        <div class="colorBoxAchivement"></div>
+        <div class="tileContent">
+            <div class="tileText">
+                <span class="achivementyear"><%- achivement[i] %>
+            </div>
+        </div>
+    </div>
+    <% } %>
+</div>
+
+<script>
+    //AchivementTiles tiles colors
+    const achivementTiles = document.querySelectorAll('.achivement-tile');
+    achivementTiles[0].firstElementChild.innerHTML = '<i class="fa fa-trophy"></i>';
+    achivementTiles[1].firstElementChild.innerHTML = '<i class="fa fa-file"></i>';
+
+
+</script>

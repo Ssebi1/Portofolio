@@ -13,6 +13,7 @@ const DomElements = {
   trainingDiv: document.querySelector('.training'),
   skillsDiv: document.querySelector('.skills'),
   projectsDiv: document.querySelector('.projects'),
+  achivementsDiv: document.querySelector('.achivement'),
   contactDiv: document.querySelector('.contact'),
   viewMoreButton: document.querySelectorAll('.viewMore'),
   webArea: document.querySelector('.web'),

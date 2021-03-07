@@ -50,7 +50,7 @@
 
 			<!-- Navigation -->
 			<%- include('modules/navigation',{
-					navigationItem: ['Acasă','Despre','Educație','Pregătire','Cunoștințe','Proiecte','Contact']
+					navigationItem: ['Acasă','Despre','Educație','Cunoștințe','Proiecte','Pregătire','Realizări','Contact']
 			}) %>
 
 			<!-- Footer -->
@@ -108,26 +108,6 @@
 			}) %>
 
 
-			<!-- Training area -->
-			<%- include('modules/trainingArea',{
-				<!-- Small title goes here -->
-				smallTitle: 'Education history',
-
-				<!-- Big title goes here -->
-				bigTitle: 'Training/Experiences',
-
-				<!-- Education tiles goes here -->
-				training: [
-				'Certificare IC3 Digital Literacy',
-				'Experiență Erasmus exchange în 2016',
-				'Cursul PHP Fundamentals de Edwin Diaz',
-				'Cursul The Complete Javascript de Jonas Schmedtmann',
-				'Curs React de Maximilian Schwarzmüller',
-				'Docker Workshop de JSLeague',
-				]
-			}) %>
-
-
 			<!-- Skills area -->
 			<%- include('modules/skillsArea',{
 				<!-- Small title goes here -->
@@ -154,6 +134,40 @@
 
 				<!-- Button text -->
 				buttonText: 'VEZI MAI MULT'
+			}) %>
+
+			<!-- Training area -->
+			<%- include('modules/trainingArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Pregătire',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Cursuri/Experiențe',
+
+				<!-- Education tiles goes here -->
+				training: [
+				'Certificare IC3 Digital Literacy',
+				'Experiență Erasmus exchange în 2016',
+				'Cursul PHP Fundamentals de Edwin Diaz',
+				'Cursul The Complete Javascript de Jonas Schmedtmann',
+				'Curs React de Maximilian Schwarzmüller',
+				'Docker Workshop de JSLeague',
+				]
+			}) %>
+
+			<!-- Achivements area -->
+			<%- include('modules/achivementArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Realizări',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Realizări',
+
+				<!-- Achivement tiles goes here -->
+				achivement: [
+				'2019</span><br> Olimpiada Națională de Tehnologia Informației<br>Medalie de Bronz',
+				'2019</span><br> Articol Micro:bit în Revista Școlii<br>\"ROaITă - Revista pentru pasionati de IT&C 4\"',
+				]
 			}) %>
 
 			<!-- Contact area -->

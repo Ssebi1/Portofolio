@@ -2,10 +2,10 @@
 <html>
 
 <head>
-
+	<script src="https://use.fontawesome.com/35e0e0136a.js"></script>
 	<!-- Seo -->
 	<meta name="keywords"
-		content="HTML, CSS, JavaScript, Dancau Sebastian, Cv, Resume, Internship, Job, Dancau, Sebastian, personal website">
+		content="HTML, CSS, JavaScript, Dancau Sebastian,Sebastian Dancau,sebastian dancau,dancau sebastian, Cv, Resume, Internship, Job, Dancau, Sebastian, personal website">
 	<meta name="description"
 		content="Dancau Sebastian's personal website. Here are available projects, resume and details about me.">
 	<meta name="author" content="Dancau Sebastian">
@@ -15,11 +15,8 @@
 	<link rel="apple-touch-icon" href="../public/apple_icon.png" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Dăncău Sebastian - Personal Website</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
 	<meta name="google-site-verification" content="2BOyB7vYQHeEDGq2JnB9oT_c6v5PiueojTtvbEiUskE" />
@@ -53,7 +50,7 @@
 			<!-- Navigation -->
 			<p style="display: none;">Navigation</p>
 			<%- include('modules/navigation',{
-					navigationItem: ['Home','About','Education','Training','Skills','Projects','Contact']
+					navigationItem: ['Home','About','Education','Skills','Projects','Training','Achivements','Contact']
 			}) %>
 
 			<!-- Footer -->
@@ -111,25 +108,6 @@
 			}) %>
 
 
-			<!-- Training area -->
-			<%- include('modules/trainingArea',{
-				<!-- Small title goes here -->
-				smallTitle: 'Education history',
-
-				<!-- Big title goes here -->
-				bigTitle: 'Training/Experiences',
-
-				<!-- Education tiles goes here -->
-				training: [
-				'IC3 Digital Literacy Certification',
-				'Erasmus exchange experience in 2016',
-				'PHP Fundamentals course by Edwin Diaz',
-				'The Complete Javascript course by Jonas Schmedtmann',
-				'React course by Maximilian Schwarzmüller',
-				'Docker Workshop by JSLeague',
-				]
-			}) %>
-
 
 			<!-- Skills area -->
 			<%- include('modules/skillsArea',{
@@ -158,6 +136,42 @@
 				<!-- Button text -->
 				buttonText: 'VIEW MORE'
 			}) %>
+
+
+			<!-- Training area -->
+			<%- include('modules/trainingArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Training',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Training/Experiences',
+
+				<!-- Education tiles goes here -->
+				training: [
+				'IC3 Digital Literacy Certification',
+				'Erasmus exchange experience in 2016',
+				'PHP Fundamentals course by Edwin Diaz',
+				'The Complete Javascript course by Jonas Schmedtmann',
+				'React course by Maximilian Schwarzmüller',
+				'Docker Workshop by JSLeague',
+				]
+			}) %>
+
+			<!-- Achivements area -->
+			<%- include('modules/achivementArea',{
+				<!-- Small title goes here -->
+				smallTitle: 'Achivements',
+
+				<!-- Big title goes here -->
+				bigTitle: 'Achivements',
+
+				<!-- Achivement tiles goes here -->
+				achivement: [
+				'2019</span><br> National Olympiad of Technology and Information<br>Bronze Medal',
+				'2019</span><br> Micro:bit Article in Highschool\'s Magazine<br>\"ROaITă - Revista pentru pasionati de IT&C 4\"',
+				]
+			}) %>
+
 
 			<!-- Contact area -->
 			<%- include('modules/contactArea',{
