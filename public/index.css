@@ -262,7 +262,7 @@ body {
 	padding-right: 5px;
 }
 
-.education, .training,.achivement {
+.education, .training,.achivement, .experience {
 	max-width: 100%;
 	height: auto;
 	color: black;
@@ -270,7 +270,7 @@ body {
 	margin-top: 30px;
 }
 
-.education-tile,.achivement-tile{
+.education-tile,.achivement-tile, .experience-tile{
 	max-width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -312,7 +312,7 @@ body {
 	opacity: 0.8;
 }
 
-.colorBoxAchivement{
+.colorBoxAchivement, .logoBoxExperience{
 	opacity:0.8;
 	color:yellow;
 	background:#ec5554;
@@ -336,7 +336,7 @@ body {
 	color:#777;
 }
 
-.educationyear,.achivementyear {
+.educationyear,.achivementyear, .experienceyear {
 	color: #02b0e0;
 	font-size: 12px;
 }
@@ -378,6 +378,11 @@ body {
 	height: 30px;
 	width: auto;
 	padding: 6px 10px 6px 10px;
+}
+
+.experience .company{
+	font-weight: bold;
+	font-size:22px;
 }
 
 .projects {

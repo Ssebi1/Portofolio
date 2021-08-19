@@ -1,0 +1,17 @@
+<div class="experience">
+    <div class="achivement-smallTitle smallTitle"><%= smallTitle %></div>
+    <div class="achivement-bigTitle bigTitle"><%= bigTitle %></div>
+
+    <% for(let i=0; i < experience.length; i++) { %>
+    <div class="experience-tile">
+        <div class="logoBoxExperience" style="background-color: #ececec;"><img src="<%= experience[i].logo %>" alt="Stone Soup Tech"></div>
+        <div class="tileContent">
+            <div class="tileText">
+                <div class="company"><%- experience[i].company %></div>
+                <div class="position"><%- experience[i].position %></div>
+                <span class="experienceyear"><%- experience[i].period %></span>
+            </div>
+        </div>
+    </div>
+    <% } %>
+</div>
