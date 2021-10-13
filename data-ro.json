@@ -28,6 +28,32 @@
 	{
 		"type": "web",
 		"id": "1",
+		"title": "B.T.C Agency",
+		"categories": [
+			"Web",
+			"Html",
+			"Scss",
+			"Javascript",
+			"Nodejs",
+			"Express"
+		],
+		"bannerImage": "Images/BtcAgency1.png",
+		"images": [
+			"./Images/BtcAgency1.png",
+			"./Images/BtcAgency2.png",
+			"./Images/BtcAgency3.png",
+			"./Images/BtcAgency4.png",
+			"./Images/BtcAgency5.png",
+			"./Images/BtcAgency6.png"
+		],
+		"smallDescription": "B.T.C Agency este un site de prezentare pentru o echipa de detectivi privati.",
+		"fullDescription": "none",
+		"githubLink": "none",
+		"websiteLink": "https://btc-agency.ro"
+	},
+	{
+		"type": "web",
+		"id": "2",
 		"title": "Daily Play",
 		"categories": [
 			"Web",
@@ -49,7 +75,7 @@
 	},
 	{
 		"type": "web",
-		"id": "2",
+		"id": "3",
 		"title": "Pollution",
 		"categories": [
 			"Web",
@@ -69,7 +95,7 @@
 	},
 	{
 		"type": "web",
-		"id": "3",
+		"id": "4",
 		"title": "Movies Website",
 		"categories": [
 			"Web",
@@ -92,7 +118,7 @@
 	},
 	{
 		"type": "web",
-		"id": "4",
+		"id": "5",
 		"title": "Blog CMS",
 		"categories": [
 			"Web",
@@ -117,7 +143,7 @@
 	},
 	{
 		"type": "web",
-		"id": "5",
+		"id": "6",
 		"title": "Joc de Spanzuratoarea",
 		"categories": [
 			"Web",
@@ -136,27 +162,6 @@
 		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Hangman-Game",
 		"websiteLink": "https://hangman-play.herokuapp.com"
-	},
-	{
-		"type": "web",
-		"id": "6",
-		"title": "Joc de matematica",
-		"categories": [
-			"Web",
-			"Game",
-			"Html",
-			"Css",
-			"Javascript"
-		],
-		"bannerImage": "./Images/MathGame2.jpg",
-		"images": [
-			"./Images/MathGame2.jpg",
-			"./Images/MathGame1.jpg"
-		],
-		"smallDescription": "Joc de matematica cu optiunea de a selecta dificultatea si timpul de raspuns.",
-		"fullDescription": "none",
-		"githubLink": "https://github.com/Ssebi1/math-game",
-		"websiteLink": "https://math-smart-game.herokuapp.com/"
 	},
 	{
 		"type": "web",
