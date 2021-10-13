@@ -28,6 +28,30 @@
 	{
 		"type": "web",
 		"id": "1",
+		"title": "B.T.C Agency",
+		"categories": [
+			"Web",
+			"Html",
+			"Scss",
+			"Javascript",
+			"Nodejs",
+			"Express"
+		],
+		"bannerImage": "Images/Bookify5.jpg",
+		"images": [
+			"./Images/Bookify1.jpg",
+			"./Images/Bookify4.jpg",
+			"./Images/Bookify2.jpg",
+			"./Images/Bookify3.jpg"
+		],
+		"smallDescription": "B.T.C Agency is a bussiness presentation website for a private detective company.",
+		"fullDescription": "none",
+		"githubLink": "none",
+		"websiteLink": "https://btc-agency.ro"
+	},
+	{
+		"type": "web",
+		"id": "2",
 		"title": "Daily Play",
 		"categories": [
 			"Web",
@@ -49,7 +73,7 @@
 	},
 	{
 		"type": "web",
-		"id": "2",
+		"id": "3",
 		"title": "Pollution",
 		"categories": [
 			"Web",
@@ -69,7 +93,7 @@
 	},
 	{
 		"type": "web",
-		"id": "3",
+		"id": "4",
 		"title": "Movies Website",
 		"categories": [
 			"Web",
@@ -92,7 +116,7 @@
 	},
 	{
 		"type": "web",
-		"id": "4",
+		"id": "5",
 		"title": "CMS Blog",
 		"categories": [
 			"Web",
@@ -117,7 +141,7 @@
 	},
 	{
 		"type": "web",
-		"id": "5",
+		"id": "6",
 		"title": "Hangman Game",
 		"categories": [
 			"Web",
@@ -136,27 +160,6 @@
 		"fullDescription": "none",
 		"githubLink": "https://github.com/Ssebi1/Hangman-Game",
 		"websiteLink": "https://hangman-play.herokuapp.com"
-	},
-	{
-		"type": "web",
-		"id": "6",
-		"title": "Math Game",
-		"categories": [
-			"Web",
-			"Game",
-			"Html",
-			"Css",
-			"Javascript"
-		],
-		"bannerImage": "Images/MathGame2.jpg",
-		"images": [
-			"./Images/MathGame2.jpg",
-			"./Images/MathGame1.jpg"
-		],
-		"smallDescription": "Math game with options for selecting difficulty and timer.",
-		"fullDescription": "none",
-		"githubLink": "https://github.com/Ssebi1/math-game",
-		"websiteLink": "https://math-smart-game.herokuapp.com/"
 	},
 	{
 		"type": "web",
