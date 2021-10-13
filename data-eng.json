@@ -37,12 +37,14 @@
 			"Nodejs",
 			"Express"
 		],
-		"bannerImage": "Images/Bookify5.jpg",
+		"bannerImage": "Images/BtcAgency1.png",
 		"images": [
-			"./Images/Bookify1.jpg",
-			"./Images/Bookify4.jpg",
-			"./Images/Bookify2.jpg",
-			"./Images/Bookify3.jpg"
+			"./Images/BtcAgency1.png",
+			"./Images/BtcAgency2.png",
+			"./Images/BtcAgency3.png",
+			"./Images/BtcAgency4.png",
+			"./Images/BtcAgency5.png",
+			"./Images/BtcAgency6.png"
 		],
 		"smallDescription": "B.T.C Agency is a bussiness presentation website for a private detective company.",
 		"fullDescription": "none",
