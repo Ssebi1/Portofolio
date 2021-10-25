@@ -10,6 +10,7 @@ const DomElements = {
   homeDiv: document.querySelector('.banner'),
   aboutDiv: document.querySelector('.about'),
   educationDiv: document.querySelector('.education'),
+  experienceDiv: document.querySelector('.experience'),
   trainingDiv: document.querySelector('.training'),
   skillsDiv: document.querySelector('.skills'),
   projectsDiv: document.querySelector('.projects'),
