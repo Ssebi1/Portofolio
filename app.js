@@ -27,14 +27,6 @@ app.get('/sitemap.xml', (req, res) => {
   res.sendFile('sitemap.xml', { root: '.' });
 });
 
-app.get('/blank',(req,res) => {
-  res.render('cov.ejs');
-})
-
-app.get('/t',(req,res) => {
-  res.render('ana.ejs');
-})
-
 //Routes
 app.get('/', (req, res) => {
   const language = req.query.lng;
