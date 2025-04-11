@@ -1,7 +1,9 @@
 name: Build and Push Docker Image
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - master
 
 jobs:
   build-and-push:
@@ -36,8 +38,12 @@ jobs:
 
       - name: Build image
         run: |          
-          docker build -t ${{ env.IMAGE_NAME }}:${{ steps.get_tag.outputs.new_tag }} .
+          docker build -t ${{ env.IMAGE_NAME }}:${{ steps.get_tag.outputs.new_tag }} -t ${{ env.IMAGE_NAME }}:latest .
 
-      - name: Push image to Docker Hub
+      - name: Push image to Docker Hub (version tag)
+        run: |
+          docker push ${{ env.IMAGE_NAME }}:${{ steps.get_tag.outputs.new_tag }}
+
+      - name: Push image to Docker Hub (latest)
         run: |
           docker push ${{ env.IMAGE_NAME }}:${{ steps.get_tag.outputs.new_tag }}
