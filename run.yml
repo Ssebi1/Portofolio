@@ -1,7 +1,7 @@
 services:
 
   frontend:
-    image: ssebi001/portofolio:1.6
+    image: ssebi001/portofolio:1.7
     hostname: frontend
     env_file: .env
     restart: unless-stopped
