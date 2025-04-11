@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 8080;
+const port = 8080;
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
@@ -95,7 +95,7 @@ app.post('/message', (req, res) => {
   const language = req.query.lng;
   var mailOptions = {
     from: 'sebidancau1234@gmail.com',
-    to: 'mrsebi17@yahoo.com',
+    to: 'sebastian@dancau.net',
     subject: subject,
     html: `From: ${email} <br>${message}`,
   };

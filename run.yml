@@ -1,0 +1,10 @@
+services:
+
+  frontend:
+    image: ssebi001/portofolio:1.0
+    hostname: frontend
+    env_file: .env
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${PORT}:8080"
+    command: npm run start
