@@ -53,7 +53,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/resume', (req, res) => {
-  res.download('./public/Cv.pdf', (err) => {
+  res.download('./public/Dancau Sebastian - resume.pdf', (err) => {
     if (err) res.render('/');
   });
 });
